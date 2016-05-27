@@ -26,8 +26,14 @@ Course schedule:
 
 NOTE: The problem statements and solutions are not posted on this webpage to comply with the copyrights (if any) of the authors of the textbooks. Please email at kaustubh [[dot]] rane21 [[at]] gmail [[dot]] com with any queries regarding the content.
 
+IMPORTANT: How to use this repository
+
+1. Most of the notes are included in a single file named "chemical_process_calc.mm" and few notes are provided in the form of PDF documents. The file "chemical_process_calc.mm" is self-explanatory. The ".mm" file format is associated with 'FreeMind' which is a mind-mapping software tool written in JAVA. To view and/or to edit these files, one may use freely available softwares like FreeMind (http://freemind.sourceforge.net/wiki/index.php/Main_Page) or Docear (http://www.docear.org/).
+
+2. In order to request edits in the ".mm" files, please create a GitHub account, fork the repository, maake changes to a file and submit the pull request to me. The procedure is explained in detail on https://guides.github.com/activities/hello-world/
+
+3. If you are a student taking the course at IIT Gandhinagar, I will recommend creating the GitHub account such that your identity is easily determined.
+
 Copyright 2016 Kaustubh Rane
 
 Licensed under GNU GENERAL PUBLIC LICENSE Version 3
-
-
