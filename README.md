@@ -1,0 +1,1 @@
+The course is offered at IIT Gandhinagar to the undergraduate students. It is a required course for completing the B.Tech. degree in the discipline of Chemical Engineering. It is targeted towards students in the second year of the undergraduate program. 
