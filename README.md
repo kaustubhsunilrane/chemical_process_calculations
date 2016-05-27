@@ -28,6 +28,6 @@ NOTE: The problem statements and solutions are not posted on this webpage to com
 
 Copyright 2016 Kaustubh Rane
 
-Licensed under 
+Licensed under GNU GENERAL PUBLIC LICENSE Version 3
 
 
