@@ -24,6 +24,10 @@ Course schedule:
 
 1 assignment per week: Selected problems that may or may not be from the textbook. These will be emailed to the students every week.
 
-NOTE: The problem statements and solutions are not posted on this webpage to comply with the copyrights (if any) of the authors of the textbooks.
+NOTE: The problem statements and solutions are not posted on this webpage to comply with the copyrights (if any) of the authors of the textbooks. Please email at kaustubh [[dot]] rane21 [[at]] gmail [[dot]] com with any queries regarding the content.
+
+Copyright 2016 Kaustubh Rane
+
+Licensed under 
 
 
