@@ -1,4 +1,4 @@
-<map version="docear 1.1" project="154CA3DE0AA89XBMKBLWQNJV4NE8WRQCX2F4" project_last_home="file:/C:/Users/Kaustubh/Dropbox/research/projects/teaching/chemical_process_calc/" dcr_id="1463682540237_6hw5wu7hqedy6xbjiwv58lihv">
+<map version="docear 1.1" project="154CA3DE0AA89XBMKBLWQNJV4NE8WRQCX2F4" project_last_home="file:/C:/Users/Kaustubh/Dropbox/research_new/projects/teaching/chemical_process_calc/" dcr_id="1463682540237_6hw5wu7hqedy6xbjiwv58lihv">
 <!--To view this file, download Docear - The Academic Literature Suite from http://www.docear.org -->
 <node TEXT="Chemical process calculations" FOLDED="false" ID="ID_1723255651" CREATED="1283093380553" MODIFIED="1463682557857" NUMBERED="true"><hook NAME="MapStyle" layout="OUTLINE">
     <properties show_note_icons="true"/>
@@ -54,10 +54,15 @@
 <node TEXT="Lectures (11 hrs)" POSITION="right" ID="ID_1273915956" CREATED="1463685591377" MODIFIED="1464424973798" NUMBERED="true">
 <edge COLOR="#0000ff"/>
 <node TEXT="Introduction" ID="ID_1297843199" CREATED="1464253710084" MODIFIED="1464253732306" NUMBERED="true">
-<node TEXT="Course_instructions" ID="ID_1268060459" CREATED="1464253788866" MODIFIED="1464253941833" MOVED="1464253927422" NUMBERED="true"/>
-<node TEXT="Chemical process" ID="ID_691304137" CREATED="1464253733653" MODIFIED="1464253740173" NUMBERED="true"/>
-<node TEXT="Common terms" ID="ID_1596225868" CREATED="1464254104603" MODIFIED="1464254114583" NUMBERED="true"/>
-<node TEXT="Assumptions" ID="ID_1154466711" CREATED="1464253742093" MODIFIED="1464253748643" NUMBERED="true"/>
+<node TEXT="Course_instructions" ID="ID_1268060459" CREATED="1464253788866" MODIFIED="1464253941833" MOVED="1464253927422" NUMBERED="true">
+<node TEXT="1. Collecting student&apos;s contact details&#xa;2. Office hours and contact information of the instructor&#xa;2. Information about the lectures, tutorials and assignments&#xa;3. Policies&#xa;4. Grading scheme&#xa;5. Information about GitHub" ID="ID_691113666" CREATED="1465109696591" MODIFIED="1465118116752"/>
+</node>
+<node TEXT="Chemical process" ID="ID_691304137" CREATED="1464253733653" MODIFIED="1464253740173" NUMBERED="true">
+<node TEXT="The word &quot;chemical process&quot; in this course refers to any activity that is performed with chemicals. It may refer to a single step or a combination of steps. The emphasis will be on the processes that are encountered in the chemical industry. Each process can be characterized by the information about the input, the output and the process. The concerned calculations can be classified into three types:&#xa;1. Given the information about input and process, estimate that of the output&#xa;2. Given the information about output and process, estimate that of the input&#xa;3. Given the information about input and output, estimate that of the process&#xa;The first two types of calculations are typically used during the operation of an existing process, whereas those belonging to the last type are used in designing a process. In this course we will only consider the first two types." ID="ID_1336652725" CREATED="1465111110523" MODIFIED="1465114791820"/>
+</node>
+<node TEXT="Assumptions" ID="ID_1154466711" CREATED="1464253742093" MODIFIED="1464253748643" NUMBERED="true">
+<node TEXT="The important assumptions in this course are listed below:&#xa;Content:&#xa;1. The information about process is provided&#xa;2. Details about the equipment are not required for calculations&#xa;3. Calculations are tractable&#xa;4. No nuclear reactions&#xa;&#xa;Students:&#xa;1. Basic knowledge about calculators and computers&#xa;2. Basic knowledge of calculus&#xa;3. Basic knoweldge of chemistry" ID="ID_832857762" CREATED="1465115575626" MODIFIED="1465118033576"/>
+</node>
 </node>
 <node TEXT="Introduction to material balance" ID="ID_1146283451" CREATED="1464255034713" MODIFIED="1464255051233" NUMBERED="true">
 <node TEXT="Information" ID="ID_521297917" CREATED="1464256009291" MODIFIED="1464256017680" MOVED="1464256020201" NUMBERED="true">
@@ -149,8 +154,12 @@
 <node TEXT="Tutorials (24 hrs)" POSITION="right" ID="ID_1941821283" CREATED="1463685606489" MODIFIED="1464425012931" NUMBERED="true">
 <edge COLOR="#00ff00"/>
 <node TEXT="Basics of calculation" ID="ID_600837209" CREATED="1464425024719" MODIFIED="1464425625673">
-<node TEXT="Units and conversions" ID="ID_371835305" CREATED="1464425626758" MODIFIED="1464425638232"/>
-<node TEXT="Significant figures and errors" ID="ID_524666362" CREATED="1464425638644" MODIFIED="1464425691719"/>
+<node TEXT="Units and conversions" ID="ID_371835305" CREATED="1464425626758" MODIFIED="1464425638232">
+<node TEXT="In this course we will use SI (International system of units). That is, the quantities provided in other systems will be converted into those of SI. This is to ensure the consistency of units across a large calculation involving several different processes. The SI has seven base units: 1) meter (m), 2) kilogram (kg), 3) second (s),  4) kelvin (K), 5) mole (mol), 6) ampere (A) and 7) candela (cd). The course will predominantly use the first five.&#xa;&#xa;A unit from other system can be converted into SI by using the corresponding conversion factor (cf). It specifies the &quot;ratio of SI unit to that in other system&quot;. Example, 0.01 m/cm or 0.001 kg/g. In order to express a quantity in SI units, multiply that with the appropriate conversion factor. They are provided in the Perry&apos;s Chemical Engineer&apos;s handbook." ID="ID_707456880" CREATED="1465134634268" MODIFIED="1465137865986"/>
+</node>
+<node TEXT="Significant figures and errors" ID="ID_524666362" CREATED="1464425638644" MODIFIED="1464425691719">
+<node TEXT="The calculations will be performed using the scientific notation. This helps in keeping track of significant figures. However, the result of the calculation can be converted to a general notation for the ease of oral communication. Significant figures are the digits starting from the first non-zero digit of a number to the 1) last nonzero digit if decimal point is absent or 2) the last digit if the decimal point is present.  The number of significant figures denotes the maximum uncertainty that is expected in a particular value. For example, if mass is provided as 2.00 kg, then there are three significant figures and the maximum uncertainty in this mass is 0.005 kg. Note that 2.00 kg is not the actual average of multiple measurements, but an estimate. However, in some cases the actual average and uncertainty may be provided as 2.001(2) kg. Here, 2.001 kg is the average of multiple measurements and the number in brackets denotes the &quot;measured&quot; uncertainty in the last digit. That is, 2.001 +/- 0.002 kg." ID="ID_488048336" CREATED="1465138270018" MODIFIED="1465140710539"/>
+</node>
 <node TEXT="Order of magnitude estimation" ID="ID_1404407652" CREATED="1464425652688" MODIFIED="1464425806087"/>
 <node TEXT="Examples" ID="ID_1411917361" CREATED="1464432499474" MODIFIED="1464432534108"/>
 </node>
