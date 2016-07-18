@@ -1,5 +1,17 @@
 The course is offered at IIT Gandhinagar to the undergraduate students. It is a required course for completing the B.Tech. degree in Chemical Engineering. It is targeted towards students in the second year of the undergraduate program. The weekly schedule will involve 1 lecture, 2 tutorials and 1 assignment. 
 
+Schedule:
+Lecture: Mondays from 12:05 to 1:00pm
+Tutorials: Tuesdays and Fridays from 12:05 to 1:00pm
+Office hours: Monday 9:00 to 10:00 am Friday 3:00 to 5:00pm
+
+Regarding office hours:
+I recommend office hours for the discussions related to the course.
+Please email me atleast 1 day before meeting.
+I will update your meeting-slot on my calendar.
+Please check my calendar to know your time-slot before meeting.
+(https://calendar.google.com/calendar/ical/kaustubhrane%40iitgn.ac.in/public/basic.ics)
+
 The main objectives of the course are as follows:
 
 1. To introduce the types of processes that are encountered in the chemical industry.
