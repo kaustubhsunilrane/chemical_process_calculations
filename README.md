@@ -10,7 +10,7 @@ I recommend office hours for the discussions related to the course.
 Please email me atleast 1 day before meeting.
 I will update your meeting-slot on my calendar.
 Please check my calendar to know your time-slot before meeting.
-(https://calendar.google.com/calendar/ical/kaustubhrane%40iitgn.ac.in/public/basic.ics)
+(https://calendar.google.com/calendar/embed?src=kaustubhrane%40iitgn.ac.in&ctz=Asia/Calcutta)
 
 The main objectives of the course are as follows:
 
