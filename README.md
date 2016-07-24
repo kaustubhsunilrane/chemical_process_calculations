@@ -17,9 +17,9 @@ The grading scheme used at IITGN is explained in the "Advisories" document on th
 
 1. Assignments: 30%
 
-2. Mid-sem: 45%
+2. Mid-sem: 35%
 
-3. End-sem: 45%
+3. End-sem: 35%
 
 The solutions will be graded based on the following aspects:
 
