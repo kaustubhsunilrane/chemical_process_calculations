@@ -1,4 +1,4 @@
-The course is offered at IIT Gandhinagar to the undergraduate students. It is a required course for completing the B.Tech. degree in Chemical Engineering. It is targeted towards students in the second year of the undergraduate program. The weekly schedule will involve 1 lecture, 2 tutorials and 1 assignment. 
+The course is offered at IIT Gandhinagar to the undergraduate students. It is a required course for completing the B.Tech. degree in Chemical Engineering. It is targeted towards students in the second year of the undergraduate program. The weekly schedule will involve 1 lecture, 2 tutorials and 1 assignment. Credits: 2 
 
 Schedule:
 Lecture: Mondays from 12:05 to 1:00pm
@@ -40,8 +40,11 @@ NOTE: The problem statements and solutions are not posted on this webpage to com
 
 Grading:
 The grading scheme used at IITGN is explained in the "Advisories" document on the internal website of IITGN. The letter grades and their equivalent on the 10-point scale are provided there. The final grades of this course will have the following weightage:
+
 1. Assignments: 30%
+
 2. Mid-sem: 45%
+
 3. End-sem: 45%
 
 IMPORTANT: How to use this repository
