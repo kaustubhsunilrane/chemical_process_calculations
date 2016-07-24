@@ -34,9 +34,15 @@ Course schedule:
 
 2 tutorials per week: Solving selected problems from the textbook and explaining the strategies. Notes about the strategies will be updated in advance. The problem statements will be provided to the students during the tutorial session.
 
-1 assignment per week: Selected problems that may or may not be from the textbook. These will be emailed to the students every week.
+1 assignment per week: Selected problems that may or may not be from the textbook. These will be communicated to the students during the lectures and/or tutorials.
 
 NOTE: The problem statements and solutions are not posted on this webpage to comply with the copyrights (if any) of the authors of the textbooks. Please email at kaustubh [[dot]] rane21 [[at]] gmail [[dot]] com with any queries regarding the content.
+
+Grading:
+The grading scheme used at IITGN is explained in the "Advisories" document on the internal website of IITGN. The letter grades and their equivalent on the 10-point scale are provided there. The final grades of this course will have the following weightage:
+1. Assignments: 30%
+2. Mid-sem: 45%
+3. End-sem: 45%
 
 IMPORTANT: How to use this repository
 
