@@ -12,6 +12,19 @@ I will update your meeting-slot on my calendar.
 Please check my calendar to know your time-slot before meeting.
 (https://calendar.google.com/calendar/embed?src=kaustubhrane%40iitgn.ac.in&ctz=Asia/Calcutta)
 
+Please use the following format for emails:
+
+1. In the subject, write CL201. 
+
+2. The purpose: ASSN for assignment related queries
+                EXAM for exam related queries
+                GENE for general queries about the content of the course etc.
+3. Student id no. 
+4. Date for the appointment 
+5. Since the email is just for taking the appointment, the content may be left blank.
+
+NOTE: COURSE RELATED QUERIES WILL NOT BE ANSWERED OVER EMAILS
+
 Grading:
 The grading scheme used at IITGN is explained in the "Advisories" document on the internal website of IITGN. The letter grades and their equivalent on the 10-point scale are provided there. The final grades of this course will have the following weightage:
 
