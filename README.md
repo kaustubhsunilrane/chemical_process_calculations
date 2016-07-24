@@ -12,6 +12,23 @@ I will update your meeting-slot on my calendar.
 Please check my calendar to know your time-slot before meeting.
 (https://calendar.google.com/calendar/embed?src=kaustubhrane%40iitgn.ac.in&ctz=Asia/Calcutta)
 
+Grading:
+The grading scheme used at IITGN is explained in the "Advisories" document on the internal website of IITGN. The letter grades and their equivalent on the 10-point scale are provided there. The final grades of this course will have the following weightage:
+
+1. Assignments: 30%
+
+2. Mid-sem: 45%
+
+3. End-sem: 45%
+
+The solutions will be graded based on the following aspects:
+
+1. Conceptual understanding: 40% weight
+
+2. Correct figures: 40% weight
+
+3. Presentation: 20% weight
+
 The main objectives of the course are as follows:
 
 1. To introduce the types of processes that are encountered in the chemical industry.
@@ -28,7 +45,7 @@ Recommended textbooks:
 
 2) "Basic Priciples and Calculations in Chemical Engineering" by David M. Himmelblau and James B. Riggs
 
-Course schedule:
+Content of lectures and tutorials:
 
 1 lecture per week: Discussion about the fundamental concepts. The information will be updated on this site in advance.
 
@@ -37,15 +54,6 @@ Course schedule:
 1 assignment per week: Selected problems that may or may not be from the textbook. These will be communicated to the students during the lectures and/or tutorials.
 
 NOTE: The problem statements and solutions are not posted on this webpage to comply with the copyrights (if any) of the authors of the textbooks. Please email at kaustubh [[dot]] rane21 [[at]] gmail [[dot]] com with any queries regarding the content.
-
-Grading:
-The grading scheme used at IITGN is explained in the "Advisories" document on the internal website of IITGN. The letter grades and their equivalent on the 10-point scale are provided there. The final grades of this course will have the following weightage:
-
-1. Assignments: 30%
-
-2. Mid-sem: 45%
-
-3. End-sem: 45%
 
 IMPORTANT: How to use this repository
 
