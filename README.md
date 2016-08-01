@@ -1,8 +1,8 @@
 The course is offered at IIT Gandhinagar to the undergraduate students. It is a required course for completing the B.Tech. degree in Chemical Engineering. It is targeted towards students in the second year of the undergraduate program. The weekly schedule will involve 1 lecture, 2 tutorials and 1 assignment. Credits: 2 
 
 Schedule:
-Lecture: Mondays from 12:05 to 1:00pm
-Tutorials: Tuesdays and Fridays from 12:05 to 1:00pm
+Lecture: Mondays from 10:00 to 10:55pm
+Tutorials: Wednesdays from 12:05 to 1:00pm and Thursdays from 10:55 to 11:00
 Office hours: Monday 9:00 to 10:00 am Friday 3:00 to 5:00pm
 
 Regarding office hours:
