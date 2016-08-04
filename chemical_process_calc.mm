@@ -1,4 +1,4 @@
-<map version="docear 1.1" project="154CA3DE0AA89XBMKBLWQNJV4NE8WRQCX2F4" project_last_home="file:/C:/Users/Kaustubh/Dropbox/research_new/projects/teaching/chemical_process_calc/" dcr_id="1463682540237_6hw5wu7hqedy6xbjiwv58lihv">
+<map version="docear 1.1" dcr_id="1463682540237_6hw5wu7hqedy6xbjiwv58lihv" project="154CA3DE0AA89XBMKBLWQNJV4NE8WRQCX2F4" project_last_home="file:/C:/Users/abc/Dropbox/research_new/projects/teaching/chemical_process_calc/">
 <!--To view this file, download Docear - The Academic Literature Suite from http://www.docear.org -->
 <node TEXT="Chemical process calculations" FOLDED="false" ID="ID_1723255651" CREATED="1283093380553" MODIFIED="1463682557857" NUMBERED="true"><hook NAME="MapStyle" layout="OUTLINE">
     <properties show_note_icons="true"/>
@@ -94,7 +94,7 @@
 </node>
 <node TEXT="Flow-charts and convention" ID="ID_670174417" CREATED="1464255222553" MODIFIED="1464255333737" NUMBERED="true">
 <node TEXT="In this course we will follow a general convention for the flow-charts. I strongly recommend this convention because it will aid in discussing problems, grading assignments et cetera. A flow-chart consists of an object denoting the process and arrows denoting the transfer of materials to or from or between processes." ID="ID_1856643646" CREATED="1465294045599" MODIFIED="1465294684285" NUMBERED="true"/>
-<node TEXT="For most calculations in this course, we are not interested in the equipment details and we will not use special symbols to denote equipments like pumps or distillation columns. However, you will encounter these symbols while discussing the softwares used for the process simulation. All the symbols are depicted in notes_1.2.4.pdf.&#xa;&#xa;Symbols&#xa;1) Circle:  Steady state process&#xa;2) Square: Un-steady state process&#xa;3) Straight arrow: Continuous stream of materials&#xa;4) Dashed arrow: The material transferred in a single instant. Either before the start of the process or after the end. Used in an un-steady state process ( batch or semi-batch).&#xa;5) Discontinuous arrow (see notes_1.2.4.pdf): Recycle stream&#xa;&#xa;Nomenclature&#xa;1) Processes will be named by capital alphabets (A, B, ...). The order of alphabets will be same as the order with which the processes are mentioned in a problem.&#xa;2) Material streams will be denoted by a combination of numbers and alphabets. The streams will be numbered according to the order with which they are mentioned in a problem. The numbers will be preceeded by the alphabet denoting the earlier process (upstream process), and followed by the alphabet denoting the later process (downstream process). If there is no upstream or downstream process, the alphabet is absent. Followsing are the examples:&#xa;1A: Stream 1 entering the process A&#xa;C4D: Stream 4 leaving the process C and entering the process D&#xa;B3: Stream 3 leaving the process B&#xa;&#xa;Other conventions&#xa;1) The data will be noted in a table, with streams as columns and different properties as rows. The rows will include the data in the following order: temperature, pressure, total quantity of the stream, composition of each component in the order of appearance in the problem. Generally, the total quantity will be written interms of mass or moles. Only if all the inputs and outputs of a process are incompressible liquids or gases at same pressure and temperature, we will use volumes. The composition will be mostly specified in terms of mole fraction. If the process is non-reactive and the total quantity is specified in terms of mass, we will use mass fractions.&#xa;2) Each process will be drawn separately with inputs on the left and outputs on the right." ID="ID_1681950918" CREATED="1465294687886" MODIFIED="1466071743500" MOVED="1465294696460" NUMBERED="true"/>
+<node TEXT="For most calculations in this course, we are not interested in the equipment details and we will not use special symbols to denote equipments like pumps or distillation columns. However, you will encounter these symbols while discussing the softwares used for the process simulation. All the symbols are depicted in notes_1.2.4.pdf.&#xa;&#xa;Symbols&#xa;1) Circle:  Steady state process&#xa;2) Square: Un-steady state process&#xa;3) Straight arrow: Continuous stream of materials&#xa;4) Dashed arrow: The material transferred in a single instant. Either before the start of the process or after the end. Used in an un-steady state process ( batch or semi-batch).&#xa;5) Discontinuous arrow (see notes_1.2.4.pdf): Recycle stream&#xa;&#xa;Nomenclature&#xa;1) Processes will be named by capital alphabets (A, B, ...). The order of alphabets will be same as the order with which the processes are mentioned in a problem.&#xa;2) Material streams will be denoted by a combination of numbers and alphabets. The streams will be numbered according to the order with which they are mentioned in a problem. The numbers will be preceeded by the alphabet denoting the earlier process (upstream process), and followed by the alphabet denoting the later process (downstream process). If there is no upstream or downstream process, the alphabet is absent. Followsing are the examples:&#xa;1A: Stream 1 entering the process A&#xa;C4D: Stream 4 leaving the process C and entering the process D&#xa;B3: Stream 3 leaving the process B&#xa;&#xa;Other conventions&#xa;1) The data will be noted in a table, with streams as columns and different properties as rows. The rows will include the data in the following order: temperature, pressure, total quantity of the stream, composition of each component in the order of appearance in the problem. Generally, the total quantity will be written interms of mass or moles. Only if all the inputs and outputs of a process are incompressible liquids or gases at same pressure and temperature, we will use volumes.If the process is non-reactive and the total quantity is specified in terms of mass, we will use mass fractions.&#xa;2) Each process will be drawn separately with inputs on the left and outputs on the right." ID="ID_1681950918" CREATED="1465294687886" MODIFIED="1470218877797" MOVED="1465294696460" NUMBERED="true"/>
 </node>
 </node>
 <node TEXT="Getting Explicit information" ID="ID_438500704" CREATED="1464276606015" MODIFIED="1464277080433" MOVED="1464276609763" NUMBERED="true">
@@ -179,9 +179,15 @@
 </node>
 </node>
 <node TEXT="Introduction to energy balance" ID="ID_909253388" CREATED="1464279577365" MODIFIED="1464280205377" NUMBERED="true">
-<node TEXT="First law of thermodynamics" ID="ID_1787574803" CREATED="1464280228999" MODIFIED="1464280249209" NUMBERED="true"/>
 <node TEXT="Forms of energy" ID="ID_684107809" CREATED="1464280261551" MODIFIED="1464281107369" NUMBERED="true"/>
-<node TEXT="Work and heat" ID="ID_405243603" CREATED="1464281108116" MODIFIED="1464281119556" NUMBERED="true"/>
+<node TEXT="Work and heat" ID="ID_405243603" CREATED="1464281108116" MODIFIED="1464281119556" NUMBERED="true">
+<node TEXT="Convention regarding the work" ID="ID_1564730499" CREATED="1468946776043" MODIFIED="1468946788280"/>
+</node>
+<node TEXT="First law of thermodynamics" ID="ID_1787574803" CREATED="1464280228999" MODIFIED="1464280249209" NUMBERED="true" MOVED="1468946813186">
+<node TEXT="As applied to closed systems" ID="ID_869829376" CREATED="1468946835042" MODIFIED="1468946844355" MOVED="1468946847744"/>
+<node TEXT="As applied to open systems" ID="ID_51083339" CREATED="1468946826844" MODIFIED="1468946834557"/>
+</node>
+<node TEXT="Obtaining the data about energetic quantities" ID="ID_1759490152" CREATED="1468950233778" MODIFIED="1468950257750"/>
 <node TEXT="Second law of thermodynamics" ID="ID_339707016" CREATED="1464281121704" MODIFIED="1464281140867" NUMBERED="true"/>
 <node TEXT="Interaction between energy and material" ID="ID_1727842212" CREATED="1464281295562" MODIFIED="1464281345809" NUMBERED="true">
 <node TEXT="Change in state" ID="ID_1776889481" CREATED="1464281346943" MODIFIED="1464281362367" NUMBERED="true"/>
@@ -273,6 +279,14 @@
 <node TEXT="Examples for the material balance of non-reactive processes where explicit information needs to be obtained" ID="ID_1952783072" CREATED="1467705820610" MODIFIED="1467706076627" NUMBERED="true"/>
 <node TEXT="Getting implicit information" ID="ID_419530332" CREATED="1467706152119" MODIFIED="1467706160186" NUMBERED="true"/>
 <node TEXT="Examples for the material balance of non-reactive processes where implicit information needs to be obtained" ID="ID_1378574204" CREATED="1467706000570" MODIFIED="1467706224736" NUMBERED="true"/>
+<node TEXT="Getting the required data for the multiphase systems" ID="ID_1541554699" CREATED="1468948080670" MODIFIED="1468948125709"/>
+<node TEXT="Material balances incolving multiphase systems" ID="ID_1590910501" CREATED="1468948126516" MODIFIED="1468948139480"/>
+<node TEXT="Energy balance" ID="ID_972579527" CREATED="1468948142597" MODIFIED="1468948150325">
+<node TEXT="Conventions" ID="ID_333138998" CREATED="1468948151342" MODIFIED="1468948158996">
+<node TEXT="Symbols and variables" ID="ID_1582763973" CREATED="1468948160345" MODIFIED="1468948176636"/>
+<node TEXT="Tabulating the data" ID="ID_338857777" CREATED="1468948166371" MODIFIED="1468948199344"/>
+</node>
+</node>
 </node>
 <node TEXT="Assignments" POSITION="right" ID="ID_36194819" CREATED="1463685611099" MODIFIED="1463685616719" NUMBERED="true">
 <edge COLOR="#ff00ff"/>
