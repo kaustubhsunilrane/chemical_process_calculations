@@ -1,4 +1,4 @@
-<map version="docear 1.1" dcr_id="1463682540237_6hw5wu7hqedy6xbjiwv58lihv" project="154CA3DE0AA89XBMKBLWQNJV4NE8WRQCX2F4" project_last_home="file:/C:/Users/abc/Dropbox/research_new/projects/teaching/chemical_process_calc/">
+<map version="docear 1.1" project="154CA3DE0AA89XBMKBLWQNJV4NE8WRQCX2F4" project_last_home="file:/C:/Users/abc/Dropbox/research_new/projects/teaching/chemical_process_calc/" dcr_id="1463682540237_6hw5wu7hqedy6xbjiwv58lihv">
 <!--To view this file, download Docear - The Academic Literature Suite from http://www.docear.org -->
 <node TEXT="Chemical process calculations" FOLDED="false" ID="ID_1723255651" CREATED="1283093380553" MODIFIED="1463682557857" NUMBERED="true"><hook NAME="MapStyle" layout="OUTLINE">
     <properties show_note_icons="true"/>
@@ -51,7 +51,7 @@
 </map_styles>
 </hook>
 <hook NAME="AutomaticEdgeColor" COUNTER="8"/>
-<node TEXT="Lectures (11 hrs)" POSITION="right" ID="ID_1273915956" CREATED="1463685591377" MODIFIED="1464424973798" NUMBERED="true">
+<node TEXT="Lectures (11 hrs)" FOLDED="true" POSITION="right" ID="ID_1273915956" CREATED="1463685591377" MODIFIED="1464424973798" NUMBERED="true">
 <edge COLOR="#0000ff"/>
 <node TEXT="Introduction" ID="ID_1297843199" CREATED="1464253710084" MODIFIED="1464253732306" NUMBERED="true">
 <node TEXT="Course_instructions" ID="ID_1268060459" CREATED="1464253788866" MODIFIED="1464253941833" MOVED="1464253927422" NUMBERED="true">
@@ -231,7 +231,7 @@
 </node>
 <node TEXT="Tutorials (24 hrs)" POSITION="right" ID="ID_1941821283" CREATED="1463685606489" MODIFIED="1464425012931" NUMBERED="true">
 <edge COLOR="#00ff00"/>
-<node TEXT="Basics of calculation" ID="ID_600837209" CREATED="1464425024719" MODIFIED="1464425625673" NUMBERED="true">
+<node TEXT="Basics of calculation" FOLDED="true" ID="ID_600837209" CREATED="1464425024719" MODIFIED="1464425625673" NUMBERED="true">
 <node TEXT="Units and conversions" ID="ID_371835305" CREATED="1464425626758" MODIFIED="1464425638232" NUMBERED="true">
 <node TEXT="In this course we will use SI (International system of units). That is, the quantities provided in other systems will be converted into those of SI. This is to ensure the consistency of units across a large calculation involving several different processes. The SI has seven base units: 1) meter (m), 2) kilogram (kg), 3) second (s),  4) kelvin (K), 5) mole (mol), 6) ampere (A) and 7) candela (cd). The course will predominantly use the first five.&#xa;&#xa;A unit from other system can be converted into SI by using the corresponding conversion factor (cf). It specifies the &quot;ratio of SI unit to that in other system&quot;. Example, 0.01 m/cm or 0.001 kg/g. In order to express a quantity in SI units, multiply that with the appropriate conversion factor. They are provided in the Perry&apos;s Chemical Engineer&apos;s handbook.&#xa;&#xa;Additional care is required when handling the conversions involving the temperature. Here, it is important to distinguish between a &quot;temperature&quot; and a &quot;temperature interval&quot;. Let us first consider the case of temperature. Here, the conversion of one unit to another is of the form y = ax+b, where y and x are the temperatures expressed in different units. For example, y may be in Celcius scale and x may be in Fahrenheit scale. For the &quot;tempertaure interval,&quot; the conversion factors between any two scales can be expressed as ratios. If Delta_y and Delta_x represent the temperature intervals corresponding to y and x, respectively, then Delta_y = a Delta_x.&#xa;&#xa;It is sometimes necessary to transform expressions so that the variables are in SI units. In such cases the unit of the quantity is provided in the brackets adjacent to the variables. For example, when discussing flow rates, it is convenient to use the units of time (min or hr) as provided in the problem statement." ID="ID_707456880" CREATED="1465134634268" MODIFIED="1465819594617" NUMBERED="true"/>
 </node>
@@ -255,29 +255,335 @@
 </node>
 <node TEXT="Examples" ID="ID_743898295" CREATED="1464432519662" MODIFIED="1464432549370" NUMBERED="true"/>
 </node>
-<node TEXT="Material balance non-reactive 1" ID="ID_713226691" CREATED="1465822637959" MODIFIED="1465989666507" NUMBERED="true">
+<node TEXT="Material Balance for Non-Reactive Processes - 1" ID="ID_713226691" CREATED="1465822637959" MODIFIED="1473844774977" NUMBERED="true">
 <node TEXT="Independent equations and the degree of freedom analysis" ID="ID_223908125" CREATED="1465822717626" MODIFIED="1465826546673" MOVED="1465823831279" NUMBERED="true">
-<node TEXT="The number of independent equations should be same as the number of unknown variables in the problem. Due to the conservation of mass, for non-reactive processes, the number of independent equations is same as the number of different chemical components in the input or output of the process. When table-convention as described in notes_1.2.4.pdf is used for each process, then each row (except those describing temperature/pressure) corresponds to a mass balance equation. Therefore, if there are N rows, then there are N - 1 mass balance equations. Additional equations will result from the other information provided in the problem statement. If the number of unknown variables is greater than the total number of independent equations, then following are the possibilities&#xa;&#xa;1) A basis of calculation needs to be assumed. The solution to the problem statement does not depend on this quantity.&#xa;&#xa;2) There are more processes&#xa;&#xa;3) Missing information&#xa;&#xa;On the other hand if the number of unknown variables is less than the number of independent equations, then the problem is &quot;overspecified.&quot; This may be the case when one is expected to validate a solution.&#xa;&#xa;While handling any problem, the initial focus should be on reducing the number of unknown variables using the details provided in the problem statement. For example, if we are given that the gas contains only two components, then it is preferrable to fill our table with variables x and 1-x, instead of specifying two seperate variables." ID="ID_1575337617" CREATED="1465823832934" MODIFIED="1473175198986" NUMBERED="true"/>
+<node LOCALIZED_STYLE_REF="AutomaticLayout.level,4" ID="ID_1575337617" CREATED="1465823832934" MODIFIED="1473846005287" NUMBERED="true"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      The number of <b>independent equations</b>&#160;should be same as the number of <b>unknown variables</b>&#160;in the problem. Due to the conservation of mass, for non-reactive processes, the number of independent equations is same as the number of different chemical components in the input or output of the process. When table-convention as described in notes_1.2.4.pdf is used for each process, then each row (except those describing temperature/pressure) corresponds to a <b>mass balance equation</b>. Therefore, if there are N rows, then there are N - 1 mass balance equations. Additional equations will result from the <b>other information provided in the problem statement</b>.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      The difference between the number of unknowns&#160;and the number of independent equations is called the <b>degree of freedom</b>&#160;of the process.
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_1951619515" CREATED="1473845324054" MODIFIED="1473845640899"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Let <b>n_df</b>&#160;be the number of degrees of freedom, <b>n_mb</b>&#160;be the number of independent material balance equations (E.g. - mass balances), and let <b>n_relations</b>&#160;be the number of independent relations. Then:
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<hook EQUATION="n_{df} = n_{unknown} - n_{mb} - n_{relations}" NAME="plugins/latex/LatexNodeHook.properties"/>
+</node>
+<node ID="ID_1921724080" CREATED="1473845679770" MODIFIED="1473846057573"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Sources of additonal relations are:
+    </p>
+    <ol>
+      <li>
+        <b>Process specifications</b>&#160;&#160;(e.g. - ratio of components in a stream)
+      </li>
+      <li>
+        <b>Physical laws</b>&#160;(e.g. - saturation conditions)
+      </li>
+      <li>
+        <b>Physical constraints</b>&#160;(e.g - sum of mole fractions is 1)
+      </li>
+    </ol>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node LOCALIZED_STYLE_REF="AutomaticLayout.level,4" ID="ID_208637851" CREATED="1473845003413" MODIFIED="1473846087436"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      If the number of unknown variables is greater than the total number of independent equations (i.e. <b>n_df &gt; 0</b>), then following are the possibilities
+    </p>
+    <p>
+      
+    </p>
+    <ol>
+      <li>
+        A basis of calculation needs to be assumed. The solution to the problem statement does not depend on this quantity.
+      </li>
+      <li>
+        There are more processes.
+      </li>
+      <li>
+        Missing information
+      </li>
+    </ol>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_1150463563" CREATED="1473845077709" MODIFIED="1473845917073"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      On the other hand if the number of unknown variables is less than the number of independent equations (i.e. <b>n_df &lt; 0</b>), then the problem is &quot;overspecified&quot;. This may be the case when one is expected to validate a solution.
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node TEXT="While handling any problem, the initial focus should be on reducing the number of unknown variables using the details provided in the problem statement. For example, if we are given that the gas contains only two components, then it is preferrable to fill our table with variables x and 1-x, instead of specifying two seperate variables." ID="ID_850590764" CREATED="1473845103828" MODIFIED="1473845107048"/>
 </node>
 <node TEXT="Basis of calculation" ID="ID_293985119" CREATED="1465822662608" MODIFIED="1465822717124" NUMBERED="true">
-<node TEXT="Generally, a quantity associated with one stream is selected as the basis of calculation. This is done, when the desired solution of the problem statement does not depend on the actual values of this quantity. For example, in some calculations one only needs to find the ratio of the mass flow rate of an output stream to that of an input stream. Then, it is convenient to use the latter value as the basis of calculation. One may assign a suitable number to this quantity (generally, multiples of 10) or may just use a variable name. In this course we will use the variable name if the equations are easily solvable" ID="ID_40727911" CREATED="1465825236307" MODIFIED="1465826154620" NUMBERED="true"/>
+<node ID="ID_40727911" CREATED="1465825236307" MODIFIED="1473846122052" NUMBERED="true"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Generally, a <b>quantity associated with one stream</b>&#160;is selected as the basis of calculation. This is done, when the desired solution of the problem statement does not depend on the actual values of this quantity.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      For example, in some calculations one only needs to find the ratio of the mass flow rate of an output stream to that of an input stream. Then, it is convenient to use the latter value as the basis of calculation. One may assign a suitable number to this quantity (generally, multiples of 10) or may just use a variable name. In this course we will use the variable name if the equations are easily solvable
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
 </node>
 <node TEXT="Demonstration" ID="ID_1161978599" CREATED="1465827911890" MODIFIED="1465827930229" NUMBERED="true">
 <node TEXT="The above concepts are explained with an example in the notes_2.3" ID="ID_641643141" CREATED="1465827930883" MODIFIED="1465843585409" NUMBERED="true"/>
 </node>
 </node>
-<node TEXT="Material balance non-reactive 2" ID="ID_1891813229" CREATED="1465986372901" MODIFIED="1465986475345" NUMBERED="true">
+<node TEXT="Material Balance for Non-Reactive Processes - 2" ID="ID_1891813229" CREATED="1465986372901" MODIFIED="1473844792876" NUMBERED="true" MOVED="1473844568993">
 <node TEXT="Multiple processes" ID="ID_1231979649" CREATED="1466079337800" MODIFIED="1466079348970" MOVED="1466079341035" NUMBERED="true">
-<node TEXT="We will discuss here the strategy to be used for the mass balance of multiple non-reactive processes. The advantages of our nomenclature will be realized in these calculations. The steps to be followed are as follows:&#xa;&#xa;1. Identify different streams and processes and name them according to our convention. Let the nunber of processes be Np and the number of chemical components be Nc. Notice that the total number of &quot;possible&quot; material balances will be Nc*Np*(Np+1)/2. This includes even the combinations of one or more processes. The number of &quot;independent&quot; material balance equations will be Nc*Np. (CAUTION: The above formulae assume that Nc components are present in each process. If the no. of components is different for each process, then the no. of independent balances will be the summaton as shown in equation 1 below. Also, one should be careful that a particular balance for the component is only counted once. This is especially important when a component only appears in the recycle stream.)&#xa;&#xa;2. Tabulate the data with columns as streams and rows as total mass and the fractions of different components. For each process, use the following order: 1) Input streams, 2) output stream without any following process (eg. A5 or D9) and 3) output stream followed by a process (eg. A6B or D10E).&#xa;&#xa;4. Check the degrees of freedom (df) for the overall system after considering even the intermediate streams. This will help determine whether the problem can be &quot;completely&quot; solved.&#xa;&#xa;5. Check df for each individual process. Let X be the number of unknown variables in the input and output streams of a process. Let Y be the number of additional relations pertaining to the same process that are provided in the problem statement.Then df = X - Y - Nc.&#xa;&#xa;6. If df is large for multiple processes, then determine the combinations of processes for which df is smaller. First, select a process, say P, such that it has least number of unknowns in all the input streams, and the output streams that go out of the system (Those with names of form A[i]P and P[i] where A is the preceding process and i is the integer. Hint: Start with the one with lowest df). This will be the starting process. Let the number of above unknown variables be xp. Then select another process that has least number of unknowns in all the output streams and all the input streams that come from outside the system (Those with names of form [i]Q or Q[i]B, where B is the following process). This will be the end process. Let the number of above unknown variables be xq. Let xi and xo denote the number of unknown variables in the input and output streams (coming into or going out of the combined process P-Q), respectively, for the processes between P and Q. One may now see that the df for the combination of processes starting from P and ending at Q will be xp+xq+xi+xo-Nc. (Is this a NP or P problem?)&#xa;&#xa;7. Use the material balance equations for the Np processes with least number of degrees of freedom. Note that this may also include the combined processes.&#xa;&#xa;The above strategy is depicted using a generic system containing three interconnected processes in notes_2.4.1.pdf. In these notes, the point no. 6 above is not required. We will demonstrate it while solving the specific problem." ID="ID_505794244" CREATED="1466081333233" MODIFIED="1472640442819" NUMBERED="true">
+<node ID="ID_505794244" CREATED="1466081333233" MODIFIED="1473847619690" NUMBERED="true"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      We will discuss here the strategy to be used for the mass balance of multiple non-reactive processes. The advantages of our nomenclature will be realized in these calculations. The steps to be followed are as follows:
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      1) Nomenclature: Processes are labelled as A,B,C,D,... Each stream is given a unique number 1,2,3,...n. If a stream with number k is the input stream for a process A - it is named <b>kA</b>. If it is an output stream of process A - it is named <b>Ak</b>. If the stream connects process A and process B (i.e. the same stream is an output of A and an input of B), then it is name <b>AkB. </b>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      2) Identify different streams and processes and name them according to our convention. Let the nunber of processes be <b>Np</b>&#160;and the number of chemical components be <b>Nc</b>. Notice that the total number of <b>&quot;possible&quot;</b>&#160; material balances will be <b>Nc*Np*(Np+1)/2</b>. This includes even the combinations of one or more processes. The number of <b>&quot;independent&quot;</b>&#160; material balance equations will be <b>Nc*Np</b>. (CAUTION: The above formulae assume that Nc components are present in each process. If the no. of components is different for each process, then the no. of independent balances will be the summaton as shown in equation 1 below. Also, one should be careful that <b>a particular balance for the component is only counted once</b>. This is especially important when a component only appears in the recycle stream.)
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      3) Tabulate the data with columns as streams and rows as total mass and the fractions of different components. For each process, use the following order:
+    </p>
+    <ol>
+      <li>
+        Input streams
+      </li>
+      <li>
+        Output stream without any following process (eg. A5 or D9)
+      </li>
+      <li>
+        Output stream followed by a process (eg. A6B or D10E).
+      </li>
+    </ol>
+    <p>
+      4) Check the degrees of freedom (<b>df</b>) for the <b>overall system</b>&#160; after considering even the intermediate streams. This will help determine whether the problem can be &quot;completely&quot; solved.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      5) Check <b>df</b>&#160;for each <b>individual process</b>. Let X be the number of <b>unknown variables</b>&#160;in the input and output streams of a process. Let Y be the number of <b>additional relations</b>&#160;pertaining to the same process that are provided in the problem statement.
+    </p>
+    <p>
+      Then <b>df = X - Y - Nc</b>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      6) If df is large for multiple processes, then determine the combinations of processes for which df is smaller :
+    </p>
+    <ol>
+      <li>
+        First, select a process, say P, such that it has least number of unknowns in all the input streams, and the output streams that go out of the system (Those with names of form A[i]P and P[i] where A is the preceding process and i is the integer. <i>Hint: Start with the one with lowest df)</i>. This will be the starting process.
+      </li>
+      <li>
+        Let the number of above unknown variables be <b>xp</b>.
+      </li>
+      <li>
+        Then select another process that has least number of unknowns in all the output streams and all the input streams that come from outside the system (Those with names of form [i]Q or Q[i]B, where B is the following process). This will be the end process.
+      </li>
+      <li>
+        Let the number of above unknown variables be <b>xq</b>.
+      </li>
+      <li>
+        Let <b>xi</b>&#160;and <b>xo</b>&#160;denote the number of unknown variables in the input and output streams (coming into or going out of the combined process P-Q), respectively, for the processes between P and Q.
+      </li>
+      <li>
+        One may now see that the <b>df</b>&#160;for the combination of processes starting from P and ending at Q will be <b>xp+xq+xi+xo-Nc</b>. (Is this a NP or P problem?)
+      </li>
+    </ol>
+    <p>
+      
+    </p>
+    <p>
+      7) Use the material balance equations for the <b>Np</b>&#160;processes with least number of degrees of freedom. Note that this may also include the combined processes.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      The above strategy is depicted using a generic system containing three interconnected processes in notes_2.4.1.pdf. In these notes, the point no. 6 above is not required. We will demonstrate it while solving the specific problem.s
+    </p>
+  </body>
+</html>
+
+</richcontent>
 <hook EQUATION="1.  Independent\ material\ balances = \Sigma_{\mathrm{i}} N^{\mathrm{i}}_{c} N^{\mathrm{i}}_{p}" NAME="plugins/latex/LatexNodeHook.properties"/>
 </node>
 </node>
-<node TEXT="Recycle stream" ID="ID_86650818" CREATED="1465986434575" MODIFIED="1465986460658" NUMBERED="true">
-<node TEXT="In our calculations, the recycle will be considered as a separate process. This convention will be particularly useful when handling complex systems with energy balances. The abovementioned strategy will be also applicable to the system containing the recycle stream. The only difference will be while handling the combined processes where the input of the starting process and the output of the end process contains the recycle stream. In such cases, the &quot;untreated&quot; recycle stream is completely &quot;internal&quot; and it is not considered while employing the material balances and for df calculation of the combined process." ID="ID_1885061879" CREATED="1466171307948" MODIFIED="1466172245008" NUMBERED="true"/>
+<node TEXT="Recycle Stream and Bypass Stream" ID="ID_86650818" CREATED="1465986434575" MODIFIED="1473847707909" NUMBERED="true">
+<node ID="ID_1885061879" CREATED="1466171307948" MODIFIED="1473847725575" NUMBERED="true"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>Recycle: </b>In our calculations, the recycle will be considered as a separate process. This convention will be particularly useful when handling complex systems with energy balances. The abovementioned strategy will be also applicable to the system containing the recycle stream. The only difference will be while handling the combined processes where the input of the starting process and the output of the end process contains the recycle stream. In such cases, the &quot;untreated&quot; recycle stream is completely &quot;internal&quot; and it is not considered while employing the material balances and for df calculation of the combined process.
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_320909231" CREATED="1473847732489" MODIFIED="1473857903137"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>Bypass and Purge: </b>The bypass can be considered as a separate process. At the bypass point (separator), we will obtain only one independent material balance equation. Similarly for purge.
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
 </node>
 <node TEXT="Examples: Started Problem no. 4.30 of the textbook &quot;Elementary Principles of chemical processes&quot; by Felder and Rousseau (3rd edition)" ID="ID_691111403" CREATED="1465986462944" MODIFIED="1471789866274" NUMBERED="true"/>
 </node>
-<node TEXT="Problem no. 4.30 of the textbook &quot;Elementary Principles of chemical processes&quot; by Felder and Rousseau (3rd edition) and how to obtain information from databases" ID="ID_657628086" CREATED="1465989674128" MODIFIED="1471789781615" NUMBERED="true" MOVED="1467705711069"/>
+<node LOCALIZED_STYLE_REF="default" ID="ID_1426748602" CREATED="1473847773323" MODIFIED="1473853311903" MOVED="1473847775408"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>Material Balances on Reactive Processes </b>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      For reactive processes, we can use <b>Molecular balance</b>&#160;for analysis of degreese of freedom.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <b>Ndf= N_unknowns + N_independent chemical reactions - N_independent molecular balances - N_other relations </b>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <b>Key points to remember: </b>
+    </p>
+    <ol>
+      <li>
+        Chemical reactions are independent if the stoichiometric equation of any one of them cannot be obtained by adding and subtracting multiples of any other stoichiometric equations. [Felder and Rousseau, Section 4.7b]
+      </li>
+      <li>
+        Molecular balances are not independent if the species involved are in the same ratio wherever they appear in the process
+      </li>
+    </ol>
+    <p>
+      While dealing with balances on reactive species, some of the <b>additional relations </b>that may be encountered in problem statements are:
+    </p>
+    <ol>
+      <li>
+        Fractional/Percentage excess of a species (ratio of excess to stiochiometric requirement)
+      </li>
+      <li>
+        Fractional/Percentage conversion (ratio of moles of species reacted to moles of species fed)
+      </li>
+      <li>
+        Yield (in case of multiple possible side-reactions)
+      </li>
+      <li>
+        Selectivity (in case of multiple possible side-reactions)
+      </li>
+    </ol>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node TEXT="Problem no. 4.30 of the textbook &quot;Elementary Principles of chemical processes&quot; by Felder and Rousseau (3rd edition) and how to obtain information from databases" ID="ID_657628086" CREATED="1465989674128" MODIFIED="1471789781615" NUMBERED="true" MOVED="1473844539901"/>
 <node TEXT="Problem no. 4.38 of the textbook &quot;Elementary Principles of chemical processes&quot; by Felder and Rousseau (3rd edition)" ID="ID_1952783072" CREATED="1467705820610" MODIFIED="1471789735911" NUMBERED="true"/>
 <node TEXT="Problem no. 5.53 of the textbook &quot;Elementary Principles of chemical processes&quot; by Felder and Rousseau (3rd edition)" ID="ID_419530332" CREATED="1467706152119" MODIFIED="1471791601333" NUMBERED="true"/>
 <node TEXT="Problem no. 5.78 of the textbook &quot;Elementary Principles of chemical processes&quot; by Felder and Rousseau (3rd edition)" ID="ID_1378574204" CREATED="1467706000570" MODIFIED="1471791618079" NUMBERED="true"/>
