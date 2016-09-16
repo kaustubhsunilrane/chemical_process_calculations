@@ -256,7 +256,19 @@
 <node TEXT="Examples" ID="ID_743898295" CREATED="1464432519662" MODIFIED="1464432549370" NUMBERED="true"/>
 </node>
 <node TEXT="Material Balance for Non-Reactive Processes - 1" ID="ID_713226691" CREATED="1465822637959" MODIFIED="1473844774977" NUMBERED="true">
-<node TEXT="Independent equations and the degree of freedom analysis" ID="ID_223908125" CREATED="1465822717626" MODIFIED="1465826546673" MOVED="1465823831279" NUMBERED="true">
+<node TEXT="Independent equations and the degree of freedom analysis" ID="ID_223908125" CREATED="1465822717626" MODIFIED="1474016848513" MOVED="1465823831279" NUMBERED="true"><richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      [References: Class Notes, Elementary Principles of Chemical Processes (Felder and Rousseau)]
+    </p>
+  </body>
+</html>
+</richcontent>
 <node LOCALIZED_STYLE_REF="AutomaticLayout.level,4" ID="ID_1575337617" CREATED="1465823832934" MODIFIED="1473846005287" NUMBERED="true"><richcontent TYPE="NODE">
 
 <html>
@@ -275,7 +287,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_1951619515" CREATED="1473845324054" MODIFIED="1473845640899"><richcontent TYPE="NODE">
@@ -290,7 +301,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 <hook EQUATION="n_{df} = n_{unknown} - n_{mb} - n_{relations}" NAME="plugins/latex/LatexNodeHook.properties"/>
 </node>
@@ -317,7 +327,6 @@
     </ol>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node LOCALIZED_STYLE_REF="AutomaticLayout.level,4" ID="ID_208637851" CREATED="1473845003413" MODIFIED="1473846087436"><richcontent TYPE="NODE">
@@ -346,7 +355,6 @@
     </ol>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_1150463563" CREATED="1473845077709" MODIFIED="1473845917073"><richcontent TYPE="NODE">
@@ -361,7 +369,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node TEXT="While handling any problem, the initial focus should be on reducing the number of unknown variables using the details provided in the problem statement. For example, if we are given that the gas contains only two components, then it is preferrable to fill our table with variables x and 1-x, instead of specifying two seperate variables." ID="ID_850590764" CREATED="1473845103828" MODIFIED="1473845107048"/>
@@ -385,7 +392,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
@@ -486,7 +492,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 <hook EQUATION="1.  Independent\ material\ balances = \Sigma_{\mathrm{i}} N^{\mathrm{i}}_{c} N^{\mathrm{i}}_{p}" NAME="plugins/latex/LatexNodeHook.properties"/>
 </node>
@@ -504,7 +509,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_320909231" CREATED="1473847732489" MODIFIED="1473857903137"><richcontent TYPE="NODE">
@@ -519,13 +523,12 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
 <node TEXT="Examples: Started Problem no. 4.30 of the textbook &quot;Elementary Principles of chemical processes&quot; by Felder and Rousseau (3rd edition)" ID="ID_691111403" CREATED="1465986462944" MODIFIED="1471789866274" NUMBERED="true"/>
 </node>
-<node LOCALIZED_STYLE_REF="default" ID="ID_1426748602" CREATED="1473847773323" MODIFIED="1473853311903" MOVED="1473847775408"><richcontent TYPE="NODE">
+<node LOCALIZED_STYLE_REF="default" ID="ID_1426748602" CREATED="1473847773323" MODIFIED="1474012664428" MOVED="1473847775408"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -580,7 +583,79 @@
     </ol>
   </body>
 </html>
+</richcontent>
+<richcontent TYPE="DETAILS">
 
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      [References: Class Notes, Elementary Principles of Chemical Processes (Felder and Rousseau)]
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node ID="ID_533941240" CREATED="1474010538579" MODIFIED="1474020433120"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>Things to Consider while deciding number of independent relations in a process: </b>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Independent relations come from the algebraic concept of <b>independent equations</b>.
+    </p>
+    <p>
+      A system of equations is said to be <b>independent</b>&#160;if you cannot obtain any equation in the system by adding or subtracting multiples of other equations in the system.
+    </p>
+    <p>
+      SImilary for independent relations - if the corresponding equations are independent, then the relations are independent.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Some Points to consider are:
+    </p>
+    <ul>
+      <li>
+        Conversion factors should <b>not</b>&#160;be considered as independent relations. E.g. - if all but one stream variables are mass flow rates, and one is a molar flow rate - then the relation converting molar flow rate to mass flow rate is <b>not </b>an independent relation.
+      </li>
+      <li>
+        In streams in which components exist in multiple phases, we do not assign different variables to the different phases of the same component, we consider only one variable per component (E.g - Problem 6.82 of Felder and Rousseau, discussed in class). In this case- the solubilities of components will <b>not </b>be taken as separate relations - as they do <b>not </b>relate separate variables - they only determine the distribution across phases of one component, and such relations must be put together and used to determine a relation in terms of the variables we have.
+      </li>
+      <li>
+        However, when phases are being <b>separated</b>, then data about saturation may come in handy as a relation.
+      </li>
+      <li>
+        In case two components appear in a fixed ratio whenever they appear in a process, then the independence (and consistency) of relations on these components needs to be checked.
+      </li>
+    </ul>
+  </body>
+</html>
+
+</richcontent>
+<richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      [References: Class Notes, Elementary Principles of Chemical Processes (Felder and Rousseau)]
+    </p>
+  </body>
+</html>
 </richcontent>
 </node>
 <node TEXT="Problem no. 4.30 of the textbook &quot;Elementary Principles of chemical processes&quot; by Felder and Rousseau (3rd edition) and how to obtain information from databases" ID="ID_657628086" CREATED="1465989674128" MODIFIED="1471789781615" NUMBERED="true" MOVED="1473844539901"/>
