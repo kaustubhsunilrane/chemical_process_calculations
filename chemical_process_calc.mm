@@ -1,4 +1,4 @@
-<map version="docear 1.1" dcr_id="1463682540237_6hw5wu7hqedy6xbjiwv58lihv" project="154CA3DE0AA89XBMKBLWQNJV4NE8WRQCX2F4" project_last_home="file:/C:/Users/abc/Dropbox/research_new/projects/teaching/chemical_process_calc/">
+<map version="docear 1.1" project="154CA3DE0AA89XBMKBLWQNJV4NE8WRQCX2F4" project_last_home="file:/C:/Users/abc/Dropbox/research_new/projects/teaching/chemical_process_calc/" dcr_id="1463682540237_6hw5wu7hqedy6xbjiwv58lihv">
 <!--To view this file, download Docear - The Academic Literature Suite from http://www.docear.org -->
 <node TEXT="Chemical process calculations" FOLDED="false" ID="ID_1723255651" CREATED="1283093380553" MODIFIED="1463682557857" NUMBERED="true"><hook NAME="MapStyle" layout="OUTLINE">
     <properties show_note_icons="true"/>
@@ -268,7 +268,119 @@
 </node>
 <node TEXT="Material balance non-reactive 2" ID="ID_1891813229" CREATED="1465986372901" MODIFIED="1465986475345" NUMBERED="true">
 <node TEXT="Multiple processes" ID="ID_1231979649" CREATED="1466079337800" MODIFIED="1466079348970" MOVED="1466079341035" NUMBERED="true">
-<node TEXT="We will discuss here the strategy to be used for the mass balance of multiple non-reactive processes. The advantages of our nomenclature will be realized in these calculations. The steps to be followed are as follows:&#xa;&#xa;1. Identify different streams and processes and name them according to our convention. Let the nunber of processes be Np and the number of chemical components be Nc. Notice that the total number of &quot;possible&quot; material balances will be Nc*Np*(Np+1)/2. This includes even the combinations of one or more processes. The number of &quot;independent&quot; material balance equations will be Nc*Np. (CAUTION: The above formulae assume that Nc components are present in each process. If the no. of components is different for each process, then the no. of independent balances will be the summaton as shown in equation 1 below. Also, one should be careful that a particular balance for the component is only counted once. This is especially important when a component only appears in the recycle stream.)&#xa;&#xa;2. Tabulate the data with columns as streams and rows as total mass and the fractions of different components. For each process, use the following order: 1) Input streams, 2) output stream without any following process (eg. A5 or D9) and 3) output stream followed by a process (eg. A6B or D10E).&#xa;&#xa;4. Check the degrees of freedom (df) for the overall system after considering even the intermediate streams. This will help determine whether the problem can be &quot;completely&quot; solved.&#xa;&#xa;5. Check df for each individual process. Let X be the number of unknown variables in the input and output streams of a process. Let Y be the number of additional relations pertaining to the same process that are provided in the problem statement.Then df = X - Y - Nc.&#xa;&#xa;6. If df is large for multiple processes, then determine the combinations of processes for which df is smaller. First, select a process, say P, such that it has least number of unknowns in all the input streams, and the output streams that go out of the system (Those with names of form A[i]P and P[i] where A is the preceding process and i is the integer. Hint: Start with the one with lowest df). This will be the starting process. Let the number of above unknown variables be xp. Then select another process that has least number of unknowns in all the output streams and all the input streams that come from outside the system (Those with names of form [i]Q or Q[i]B, where B is the following process). This will be the end process. Let the number of above unknown variables be xq. Let xi and xo denote the number of unknown variables in the input and output streams (coming into or going out of the combined process P-Q), respectively, for the processes between P and Q. One may now see that the df for the combination of processes starting from P and ending at Q will be xp+xq+xi+xo-Nc. (Is this a NP or P problem?)&#xa;&#xa;7. Use the material balance equations for the Np processes with least number of degrees of freedom. Note that this may also include the combined processes.&#xa;&#xa;The above strategy is depicted using a generic system containing three interconnected processes in notes_2.4.1.pdf. In these notes, the point no. 6 above is not required. We will demonstrate it while solving the specific problem." ID="ID_505794244" CREATED="1466081333233" MODIFIED="1472640442819" NUMBERED="true">
+<node ID="ID_505794244" CREATED="1466081333233" MODIFIED="1474130884258" NUMBERED="true"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      We will discuss here the strategy to be used for the mass balance of multiple non-reactive processes. The advantages of our nomenclature will be realized in these calculations. The steps to be followed are as follows:
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      1.Prepare a proper flow chart of the whole process.express what problem asked you by labeling the flowchart in a proper manner.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      2.Identify different streams and processes and name them according to our convention. Let the nunber of processes be Np and the number of chemical components be Nc. Notice that the total number of &quot;possible&quot; material balances will be Nc*Np*(Np+1)/2. This includes even the combinations of one or more processes. The number of &quot;independent&quot; material balance equations will be Nc*Np. (CAUTION: The above formulae assume that Nc components are present in each process. If the no. of components is different for each process, then the no. of independent balances will be the summaton as shown in equation 1 below. Also, one should be careful that a particular balance for the component is only counted once. This is especially important when a component only appears in the recycle stream.)
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      3. Tabulate the data with columns as streams and rows as total mass and the fractions of different components. For each process, use the following order: 1) Input streams, 2) output stream without any following process (eg. A5 or D9) and 3) output stream followed by a process (eg. A6B or D10E).
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      4.Check the degrees of freedom (df) for the overall system after considering even the intermediate streams. This will help determine whether the problem can be &quot;completely&quot; solved.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      5. Check df for each individual process. Let X be the number of unknown variables in the input and output streams of a process. Let Y be the number of additional relations pertaining to the same process that are provided in the problem statement.Then df = X - Y - Nc.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      6. If df is large for multiple processes, then determine the combinations of processes for which df is smaller. First, select a process, say P, such that it has least number of unknowns in all the input streams, and the output streams that go out of the system (Those with names of form A[i]P and P[i] where A is the preceding process and i is the integer. Hint: Start with the one with lowest df). This will be the starting process. Let the number of above unknown variables be xp. Then select another process that has least number of unknowns in all the output streams and all the input streams that come from outside the system (Those with names of form [i]Q or Q[i]B, where B is the following process). This will be the end process. Let the number of above unknown variables be xq. Let xi and xo denote the number of unknown variables in the input and output streams (coming into or going out of the combined process P-Q), respectively, for the processes between P and Q. One may now see that the df for the combination of processes starting from P and ending at Q will be xp+xq+xi+xo-Nc. (Is this a NP or P problem?)
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      7. Use the material balance equations for the Np processes with least number of degrees of freedom. Note that this may also include the combined processes.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      8. If df&lt;0, then the problem is unsolvable as the negative df means that there are lesser number of independent relations known than the number of variables given in the problem. Abort the analysis.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      9.If df=0 then the problem is perfectly solvable as the number of variables in this case will be equal to the number of independent relations given in the problem. write the equation in the perfect manner and solve for the variables.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      10. If df&gt;0 then the problem is underspecified and has infinitely many solutions. in either case the problem cant be solved further. however in this case we can perform a<i>&#160;process optimization</i>&#160;in which we can choose and assign values to extra variables, and then calculate values of the remaining system variables from the system equations.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      11. If there is a mixture of components in a stream whose composition remains the same throughout the whole process then we can combine the mixture to form one single component. it will reduce the ammount of calaculation and confusion during the analysis.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      12. For a non reactive process the number of independent material balances cannot exceed the total number of components (Nc) present in the process.For example,if benzene and toluene are the species in the streams entering and leaving in a process, we can write balances on benzene, toluene, carbon, hydrogen, etc, but at most two of those balances would be independent.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      13.Read the problem carefully and figure out the number of independent relations given in between the problem statements.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      14. The independent relations could be in the form of <i>Energy Balance</i>, <i>Physical properties</i>, <i>Process specifications</i>, <i>Physical constraints</i>&#160;and <i>stoichiometric relations</i>&#160;&#160;in the problem statements.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      15. We can easily check that the given relations are independent or not by following a simple process. If one relation cannot be derived from the other given relation by simply adding or subtracting a linear combination of them ,then the relation is <i>independent</i>.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      The above strategy is depicted using a generic system containing three interconnected processes in notes_2.4.1.pdf. In these notes, the point no. 6 above is not required. We will demonstrate it while solving the specific problem.
+    </p>
+  </body>
+</html>
+
+</richcontent>
 <hook EQUATION="1.  Independent\ material\ balances = \Sigma_{\mathrm{i}} N^{\mathrm{i}}_{c} N^{\mathrm{i}}_{p}" NAME="plugins/latex/LatexNodeHook.properties"/>
 </node>
 </node>
