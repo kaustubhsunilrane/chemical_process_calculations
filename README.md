@@ -2,7 +2,7 @@ The course is offered at IIT Gandhinagar to the undergraduate students. It is a 
 
 Schedule:
 Lecture: Wednesdays from 12:05 to 1:00pm
-Tutorials: Mondays from 10:00 to 10:55am 
+Tutorials: Mondays from 10:00 to 11:55am 
 Office hours: Saturday from 4:00pm to 7:00 pm
 
 Regarding office hours:
@@ -28,9 +28,11 @@ NOTE: COURSE RELATED QUERIES WILL NOT BE ANSWERED OVER EMAILS
 Grading:
 The grading scheme used at IITGN is explained in the "Advisories" document on the internal website of IITGN. The letter grades and their equivalent on the 10-point scale are provided there. The final grades of this course will have the following weightage:
 
-1. Assignments: 30%
+1. Assignments: 25%
 
-2. Mid-sem: 35%
+2. Mid-sem: 25%
+
+3. Quiz: 15%
 
 3. End-sem: 35%
 
