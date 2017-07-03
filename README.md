@@ -72,9 +72,11 @@ NOTE: The problem statements and solutions are not posted on this webpage to com
 
 IMPORTANT: How to use this repository
 
-1. Most of the notes are included in a single file named "chemical_process_calc.mm" and few notes are provided in the form of PDF documents. The file "chemical_process_calc.mm" is self-explanatory. The ".mm" file format is associated with 'FreeMind' which is a mind-mapping software tool written in JAVA. To view and/or to edit these files, one may use freely available softwares like FreeMind (http://freemind.sourceforge.net/wiki/index.php/Main_Page) or Docear (http://www.docear.org/). I recommend Docear because of ease of including equations and references.
+1. In 2016, we attempted the use of .mm files (see chem_process_calc_2016.mm). This file could be accessed using a software called Docear. In 2017, we will use LaTeX files for each lecture. A file will be uploaded after the lecture. Each file has blank section at the end with each student's name. This is the space where the student can add her/his additions/corrections/doubts/summary of the lecture. This arrangement is to avid conflicts. Students outside IITGN can add their modifications by creating an aditional section at the end with their names.   
 
-2. In order to request edits in the ".mm" files, please create a GitHub account, fork the repository, make changes to a file and submit the pull request to me. The procedure is explained in detail on https://guides.github.com/activities/hello-world/
+2. In order to request addition to the files, please create a GitHub account, fork the repository, make changes to a file and submit the pull request to me. The procedure is explained in detail on https://guides.github.com/activities/hello-world/
+
+3. In order to avoid conflicts, the additions should be made as follows: 
 
 3. If you are a student taking the course at IIT Gandhinagar, I will recommend creating the GitHub account such that your identity is easily determined.
 
