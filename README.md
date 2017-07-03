@@ -1,9 +1,9 @@
 The course is offered at IIT Gandhinagar to the undergraduate students. It is a required course for completing the B.Tech. degree in Chemical Engineering. It is targeted towards students in the second year of the undergraduate program. The weekly schedule will involve 1 lecture, 2 tutorials and 1 assignment. Credits: 2 
 
 Schedule:
-Lecture: Wednesdays from 12:05 to 1:00pm
-Tutorials: Mondays from 10:00 to 11:55am 
-Office hours: Saturday from 4:00pm to 7:00 pm
+Lecture: Tuesday from 11:05 to 12:00pm
+Tutorials: Wednesday and Friday from 11:05 to 12:00pm 
+Office hours: Thursday from 9:00am to 11:00 am
 
 Regarding office hours:
 I recommend office hours for the discussions related to the course.
@@ -28,11 +28,9 @@ NOTE: COURSE RELATED QUERIES WILL NOT BE ANSWERED OVER EMAILS
 Grading:
 The grading scheme used at IITGN is explained in the "Advisories" document on the internal website of IITGN. The letter grades and their equivalent on the 10-point scale are provided there. The final grades of this course will have the following weightage:
 
-1. Assignments: 25%
+1. Assignments: 30%
 
-2. Mid-sem: 25%
-
-3. Quiz: 15%
+2. Mid-sem: 35%
 
 3. End-sem: 35%
 
@@ -60,6 +58,8 @@ Recommended textbooks:
 
 2) "Basic Priciples and Calculations in Chemical Engineering" by David M. Himmelblau and James B. Riggs
 
+3) "Stoichiometry" by B. I. Bhatt and S. B. Thakore
+
 Content of lectures and tutorials:
 
 1 lecture per week: Discussion about the fundamental concepts. The information will be updated on this site in advance.
@@ -78,6 +78,6 @@ IMPORTANT: How to use this repository
 
 3. If you are a student taking the course at IIT Gandhinagar, I will recommend creating the GitHub account such that your identity is easily determined.
 
-Copyright 2016 Kaustubh Rane
+Copyright 2017 Kaustubh Rane
 
 Licensed under GNU GENERAL PUBLIC LICENSE Version 3
