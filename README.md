@@ -3,7 +3,7 @@ The course is offered at IIT Gandhinagar to the undergraduate students. It is a 
 Schedule:
 Lecture: Tuesday from 9:05 to 10:00AM
 Tutorials: Wednesday and Friday from 9:05 to 10:00 AM 
-Office hours: Thursday from 9:00am to 11:00 am
+Office hours: Thursday from 10:00am to 1:00 PM
 
 Regarding office hours:
 I recommend office hours for the discussions related to the course.
