@@ -4,6 +4,7 @@ Schedule:
 Lecture: Tuesday from 9:05 to 10:00AM
 Tutorials: Wednesday and Friday from 9:05 to 10:00 AM 
 Office hours: Thursday from 10:00am to 1:00 PM
+Venue: AB 7/103
 
 Regarding office hours:
 I recommend office hours for the discussions related to the course.
