@@ -1,0 +1,86 @@
+\documentclass[journal=jpcbfk,manuscript=article]{achemso}
+%\usepackage{geometry}
+% \geometry{a4paper,total={170mm,257mm},left=20mm,top=10mm,}
+\usepackage{graphicx}
+\rmfamily
+\mdseries
+\usepackage{amssymb,amsmath}
+\usepackage{catchfilebetweentags}
+\usepackage[utf8]{inputenc}
+\usepackage[version=3]{mhchem}
+\usepackage[T1]{fontenc}
+\newcommand*\mycommand[1]{\texttt{\emph{#1}}}
+\author{Kaustubh Rane}
+\email{kaustubhrane@iitgn.ac.in}
+\phone{0091 8433596760}
+\affiliation{Chemical Engineering, Indian Institute of Technology, Gandhinagar, Palaj, Gujarat, India - 382355}
+\title{Ch. 1 Data and units}
+\begin{document}
+
+\maketitle
+
+\section{1.1 Databases for properties}
+
+The literature sources include the databases (both offline and online) and the published literature that is more specific to a particular property. The latter mainly includes the peer-reviewed publications in the scientific journals and field-specific books. The databases are generally preferred over publications and books for the properties of common chemicals. However, a thorough literature survey may be required when performing calculations with novel chemicals and/or rare properties. During this course, we will mainly refer the databases. 
+
+Thermodynamic databases list the properties of substances in the form of tables or plots. When tabulated, the data may be provided in two forms:
+
+\paragraph \noindent 1) As the actual results of measurements performed under different conditions. For example, vapor pressure of water at different temperatures.
+
+\paragraph \noindent 2) The measured values may be fitted using a mathematical expression, and the parameters of the expression may be tabulated. For example, the parameters of the Antoine equation for water.
+
+Following are the important considerations while using a database:
+
+\paragraph \noindent  1) If multiple properties are used from the same database, it is important that the database is "internally consistent." That is, different properties should satisfy the established thermodynamic relationships. For example, the relationship between Gibbs free energy, entropy and enthalpy. Well known databases have this property and therefore, we may not need to check for consistency during each application.
+
+\paragraph \noindent 2) When using the fitted parameters, it is important to consider the range of conditions (temperature, pressure et cetera) over which they are valid.
+
+\paragraph \noindent 3) The uncertainties associated with the properties are important. They determine the number of significant figures that will be used in the calculations.
+
+\paragraph \noindent 4) Units that are used. This is particularly important when using the "hardcopies" of databases (handbooks), because the values may be tabulated in a format that reduces the space requirements.
+
+The calculations of complex processes may require different properties that may not be available in a single database. There are tools that aid in searching for right databases. One may think of them as "databases of databases." One such database is ThermoDex,  that is maintained by the University of Texas libraries. This is a web-based platform (http://www.lib.utexas.edu/thermodex/) that takes the property and the type of substance, and returns the list of databases (both offline and online).
+
+\subsection{1.11 Offline databases}
+Let us now discuss some important offline databases that are relevant to the calculations of the present course. These databases are available in the library.
+
+1. CRC handbook of chemistry and physics: Also known as "rubber book" or "rubber bible" because CRC stands for the Chemical Rubber Company. Its first edition was published in 1914 and is updated annually. It is a widely used source for the properties of common chemicals. The properties include
+boiling points, melting points, density, enthalpy of formation, Gibbs free energy, entropy, heat capacity, enthalpy of fusion, solubility et cetera.
+
+2. Perry's Chemical Engineer's handbook: This was first published in 1934. Though less extensive than the  CRC handbook, it is more focussed on the Chemical Engineering practice. In addition to data, it also contains short introductions of different topics like thermodynamics, heat and mass transfer, reaction kinetics, process control, et cetera.
+
+\subsection{1.12 Online databases}
+
+\paragraph The properties of substances can be accessed via numerous websites. However, it is important to select the websites that are managed by professional institutions and which provide details about their sources. One should avoild blindly trusting the results of the popular search engines.
+
+\paragraph \noindent 1. NIST chemistry webbook (http://webbook.nist.gov/chemistry/): This website was launched in 1996 by the National Institute of Standards and Technology (NIST). NIST is the part of the United States Department of Commerce, and is a non-regulatory agency that provides measurement-standards to the academia and industry. The chemistry webbook contains the physical properties of more than 7000 organic and inorganic compounds. The properties include densities, vapor pressures, enthalpies of fusion/vaporization, solubilities, different spectra, et cetera. The interface is easy to use and available for free. It also provides an extensive list of publications concerned with the data.
+
+\paragraph \noindent 2. IUPAC-NIST solubility Database (http://srdata.nist.gov/solubility/index.aspx):    Has its roots in the IUPAC solubility data series that was launched in mid-1970s. It is regularly updated and the data is evaluated by experts. The collaboration between NIST and IUPAC starting from 1998, led to the above mentioned website. It provides the solubilities and liquid-liquid equilibrium data for binary, ternary and quaternary systems. Though mostly focussed on the liquid-liquid systems, it also has data on few solid-liquid systems.
+
+\paragraph \noindent 3. Dortmund Data Bank (http://www.ddbst.de/ddb.html): It is a database created by a private company and was started in 1973 by the faculty at the University of Dortmund. It is foucussed on the Chemical Engineering practice and is regularly updated. The free online website provides the properties that are compiled from the publications, wehereas a paid version lets user access the properties that are obtained from the in-house measurements. In addition to pure substances, it also provides properties of certain mixtures. The database also provides parameters for the group contribution methods like UNIFAC (we will come to this while discussing the "implicit" information).
+
+( NOTE: We do not recommend using Wikipedia as a source of chemical properties. Though it is easy to get certain properties for common chemicals, the Wikipedia pages can be easily modified and are not regulated for their content.)
+
+\section{1.2 Significant figures}
+
+The calculations will be performed using the scientific notation. This helps in keeping track of significant figures. However, the result of the calculation can be converted to a general notation for the ease of oral communication. Significant figures are the digits starting from the first non-zero digit of a number to the 1) last nonzero digit if decimal point is absent or 2) the last digit if the decimal point is present.  The number of significant figures denotes the maximum uncertainty that is expected in a particular value. For example, if mass is provided as 2.00 kg, then there are three significant figures and the maximum uncertainty in this mass is 0.005 kg. Note that 2.00 kg is not the actual average of multiple measurements, but an estimate. However, in some cases the actual average and uncertainty may be provided as 2.001(2) kg. Here, 2.001 kg is the average of multiple measurements and the number in brackets denotes the "measured" uncertainty in the last digit. That is, 2.001 +/- 0.002 kg.
+
+During the multiplication or division involving two numbers with different number of significant figures, the number of significant figures of the result will be same as that of the lowest of the multiplicands or divisors.
+
+During the addition or subtraction of numbers, one should check the position of the last significant digit of each number with respect to the decimal point and identify the number whose last significant digit is farthest to the left. This will also be the position of the last significant digit of the result.
+
+\section{1.3 Validation of results}
+
+It is important to validate the results of the calculations. One can develop her own method for validation. Following are some common techniques:
+
+\paragraph \noindent 1. Check if the calculated results are reasonable. For example, densities  cannot have negative values or the liquid density cannot be greater than the vapor density. With real-world problems, this point can be more subtle and this is where experience plays an important role.
+
+\paragraph \noindent 2. Back-substitution: If the calculations involve the solution of equations, back-substitute the calculated value in them and check if the "right-hand-side" is equal to the "left-hand-side".
+
+\paragraph \noindent 3. Order-of-magnitude estimation: In some calculations it is possible to estimate the order of magnitude of the final results by approximating the values of different quantities used in the calculation. For example, an equation with coefficients having many significant figures can be approximated with the one having integers. This will help us identify if the actual calculations are on the right track.
+
+%\bibliographystyle{aipauth4-1}
+%\bibliography{ch12references}
+
+
+\end{document} 
