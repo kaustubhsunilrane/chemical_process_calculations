@@ -1,0 +1,143 @@
+\documentclass[journal=jpcbfk,manuscript=article]{achemso}
+%\usepackage{geometry}
+% \geometry{a4paper,total={170mm,257mm},left=20mm,top=10mm,}
+\usepackage{graphicx}
+\rmfamily
+\mdseries
+\usepackage{amssymb,amsmath}
+\usepackage{catchfilebetweentags}
+\usepackage[utf8]{inputenc}
+\usepackage[version=3]{mhchem}
+\usepackage[T1]{fontenc}
+\newcommand*\mycommand[1]{\texttt{\emph{#1}}}
+\author{Kaustubh Rane}
+\email{kaustubhrane@iitgn.ac.in}
+\phone{0091 8433596760}
+\affiliation{Chemical Engineering, Indian Institute of Technology, Gandhinagar, Palaj, Gujarat, India - 382355}
+\title{Ch. 2 Introduction to Material Balance}
+\begin{document}
+
+\maketitle
+
+\section{2.1 Chemical process}
+
+The word "chemical process" in this course refers to any activity that is performed with chemicals. It may refer to a single step or a combination of steps. The emphasis will be on the processes that are encountered in the chemical industry. Each process can be characterized by the information about the input, the output and the process. The concerned calculations can be classified into three types: 
+
+\paragraph \noindent 1. Given the information about input and process, estimate that of the output 
+
+\paragraph \noindent 2. Given the information about output and process, estimate that of the input 
+
+\paragraph \noindent 3. Given the information about input and output, estimate that of the process 
+
+The first two types of calculations are typically used during the operation of an existing process, whereas those belonging to the last type are used in designing a process. In this course we will only consider the first two types.
+
+The input and output of a process can be also referred as the feed and the product, respectively. The processes to be considered in this course can be classified into different types, based on the time of "charging" the feed and/or "removing" the product as follows:  
+
+\paragraph \noindent 1. Batch process: The feed is charged before starting the process and the product is removed after the process is finished.
+
+\paragraph \noindent 2. Semibatch process: A part of feed or a part of product is added or removed, respectively, during the process  
+
+\paragraph \noindent 3. Continuous process: Feed is continuously added and the product is continuously removed during the process.  
+
+The process can be also classified based on how the variables change with time as 
+
+\paragraph \noindent 1. Steady state processes: The process variables do not change with time. No real-world process operates at steady state. This is because, the variables will always change with time during the start or the end of the process. However, if we assume that the process is operating for very long time, and restrict our calculations to the instances that are sufficiently far from the starting time or finishing time, we can approximate many real-world processes as steady state proceses. In these processes, the calculations are performed at a particular instant, and the material and/or energy balances are handled using "flow-rates".
+
+ \paragraph \noindent 2. Un-steady state (transient) processes: The process variables change with time. The calculations are generally concerned with the finite duration of the process and may involve differential equations with respect to time.
+
+\section{2.2 Conservation of mass}
+
+Since the course does not consider nuclear reactions, the total mass of all the constituents of the process is conserved. Further, we assume that the constituents of the equipment do not change with time and therefore, the mass conservation applies to the chemicals that are being processed. Overall, the matter being processed can be classified into the following categories:
+
+ \paragraph \noindent Input: The mass of matter that enters into the process 
+ 
+ \paragraph \noindent Output: The mass of matter the exits through the process 
+ 
+ \paragraph \noindent Generation: The mass of matter that is generated during the process 
+ 
+ \paragraph \noindent Consumption: The mass of matter that is consumed during the process 
+ 
+ \paragraph \noindent Accumulation: The mass of matter that builds up during the process. Think of it as the net matter that is generated but does not come out of the process. 
+ 
+ Then, input + generation = output + consumption + accumulation 
+ 
+ We will employ two types of balances in this course, depending on the duration of the process that is considered: 
+ 
+ \paragraph \noindent 1. Differential balance: When duration is infinitesimally small. That is, the balance is written for a particular instant during the process. Here, each term in the above equation is a flow rate.This will be generally used for continuous and semi-batch processes. 
+ 
+ \paragraph \noindent 2. Integral balance: When the balance is written for an interval between two times. Here, each term represents the amount of matter corresponding to a particular interval. This will be mainly used for the batch process, where the duration will be that of the complete process.   
+ 
+For the steady-state processes, accumulation = 0. Also, following from the conservation of matter, we can see that all steady-state processes are continuous processes. The un-steady state processes can be batch, semi-batch or continuous.
+
+\section{2.3 Degree of freedom analysis}
+
+The number of independent equations should be same as the number of unknown variables in the problem. Due to the conservation of mass, for non-reactive processes, the number of independent equations is same as the number of different chemical components in the input or output of the process. When table-convention as described during lecture is used for each process, then each row (except those describing temperature/pressure) corresponds to a mass balance equation. Therefore, if there are N rows, then there are N - 1 mass balance equations. Additional equations will result from the other information provided in the problem statement.  
+
+The difference between the number of unknowns and the number of independent equations is called the degree of freedom of the process. Let $n_{df}$ be the number of degrees of freedom, $n_{unknown}$ be the number of unknowns, $n_{mb}$ be the number of independent material balance equations (E.g. - mass balances), and let $n_{relation}$ be the number of independent relations. Then,
+
+\begin{equation}\label{eqn_df}
+{n_{df} =  n_{unknown} - n_{mb} - n_{relation} }
+\end{equation}
+
+Sources of additonal relations are:  Process specifications  (e.g. ratio of components in a stream), physical laws (e.g. - saturation conditions), physical constraints (e.g - sum of mole fractions is 1), etc.
+
+\section{Student responses}
+
+\subsection {14110151	Navdeep Prakash}
+
+\subsection {15110034	Avinash Joy Bara}
+
+\subsection {15110047	Deepti Gautam}
+
+\subsection {15110133	Suresh Kumar}
+
+\subsection {15110145	Vijendra Maurya}
+
+\subsection {16110001	Abhavya Chandra}
+
+\subsection {16110003	Abhishek Dubey}
+
+\subsection {16110033	Bhumika Sandilya}
+
+\subsection {16110036	Buditi Prudhvi}
+
+\subsection {16110056	Gameti Nirav}
+
+\subsection {16110071	Kamle Mayank Shrikant}
+
+\subsection {16110077	Khili Khamesra}
+
+\subsection {16110086	Lakhan Agrawal}
+
+\subsection {16110088	Manjot Singh}
+
+\subsection {16110109	Patel Milanbhai}
+
+\subsection {16110127	Rahul Shakya}
+
+\subsection {16110131	Raman}
+
+\subsection {16110139	Ritik Jain}
+
+\subsection {16110140	Rohan Gupta}
+
+\subsection {16110153	Shubham Sankhla}
+
+\subsection {16110156	Singh Shivam}
+
+\subsection {16110158	Sourabh Saini}
+
+\subsection {16110159	Spand Bharat Mehta}
+
+\subsection {16110160	Sparsh Jain}
+
+\subsection {16110173	Varsha Singh}
+
+\subsection {16110179	Yash Makwana}
+
+
+%\bibliographystyle{aipauth4-1}
+%\bibliography{ch12references}
+
+
+\end{document} 
