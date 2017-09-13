@@ -1,0 +1,117 @@
+\documentclass[journal=jpcbfk,manuscript=article]{achemso}
+%\usepackage{geometry}
+% \geometry{a4paper,total={170mm,257mm},left=20mm,top=10mm,}
+\usepackage{graphicx}
+\rmfamily
+\mdseries
+\usepackage{amssymb,amsmath}
+\usepackage{catchfilebetweentags}
+\usepackage[utf8]{inputenc}
+\usepackage[version=3]{mhchem}
+\usepackage[T1]{fontenc}
+\newcommand*\mycommand[1]{\texttt{\emph{#1}}}
+\author{Kaustubh Rane}
+\email{kaustubhrane@iitgn.ac.in}
+\phone{0091 8433596760}
+\affiliation{Chemical Engineering, Indian Institute of Technology, Gandhinagar, Palaj, Gujarat, India - 382355}
+\title{Ch. 2 Material Balance on Multiple Processes}
+\begin{document}
+
+\maketitle
+
+\section{3.1 Terminology}
+
+When there are multiple processes, there are streams that go from one process to another (intermediate streams), and there are streams that come into a process or go out from the process. We use the following terminology for explanation:
+
+\paragraph \noindent 1. Complete process: Including the intermediate streams
+
+\paragraph \noindent 2. Combined process: We only consider the strems that enter from outside and leave to the outside. We do not consider the intermediate streams.
+
+\section{3.2 General strategy}
+
+\paragraph \noindent 1. Read the problem statement completely!
+
+\paragraph \noindent 2. Draw the flow-chart
+
+\paragraph \noindent 3. Identify the streams of interest.
+
+\paragraph \noindent 4. Identify the total number of independent material balances
+
+\paragraph \noindent 5. Tabulate the known data and identify the unknown variables.
+
+\paragraph \noindent 6.  Determine the degree of freedom ($df$) for the complete process to know whether all the unknowns can be evaluated.
+
+\paragraph \noindent 7. Determine the degree of freedom ($df$) for the combined process
+
+\paragraph \noindent 8. If $df_{combined} = 0$, solve the equations to get the unknowns 
+
+\paragraph \noindent 9. Calculate $df$ for the indivudual processes of the appropriate sub-groups of the complete process. Consider the variables determined in the previous step as "known" while performing the $df$-analysis.
+
+\paragraph \noindent 8. Solve the equations for the processes or their groups that have $df=0$
+
+\section{3.3 Important points}
+
+\paragraph \noindent 1. Be careful while calculating the $df$ for the processes where a stream is split in to two such that each "daughter" stream has the same composition as the feed.
+
+\paragraph \noindent 2. If a component is present in only some streams of a process, and if those streams occur in another process too, the material balance for the component should be only considered once while calculationg the $df$ of  the complete process.This situation is mainly encountered when a component (solvent or catalyst) is recycled without adding the fresh component.
+
+\section{Student responses}
+
+\subsection {14110151	Navdeep Prakash}
+
+\subsection {15110034	Avinash Joy Bara}
+
+\subsection {15110047	Deepti Gautam}
+
+\subsection {15110133	Suresh Kumar}
+
+\subsection {15110145	Vijendra Maurya}
+
+\subsection {16110001	Abhavya Chandra}
+
+\subsection {16110003	Abhishek Dubey}
+
+\subsection {16110033	Bhumika Sandilya}
+
+\subsection {16110036	Buditi Prudhvi}
+
+\subsection {16110056	Gameti Nirav}
+
+\subsection {16110071	Kamle Mayank Shrikant}
+
+\subsection {16110077	Khili Khamesra}
+
+\subsection {16110086	Lakhan Agrawal}
+
+\subsection {16110088	Manjot Singh}
+
+\subsection {16110109	Patel Milanbhai}
+
+\subsection {16110127	Rahul Shakya}
+
+\subsection {16110131	Raman}
+
+\subsection {16110139	Ritik Jain}
+
+\subsection {16110140	Rohan Gupta}
+
+\subsection {16110153	Shubham Sankhla}
+
+\subsection {16110156	Singh Shivam}
+
+\subsection {16110158	Sourabh Saini}
+
+\subsection {16110159	Spand Bharat Mehta}
+
+\subsection {16110160	Sparsh Jain}
+
+\subsection {16110173	Varsha Singh}
+
+\subsection {16110179	Yash Makwana}
+
+
+%\bibliographystyle{aipauth4-1}
+%\bibliography{ch12references}
+
+
+\end{document} 
