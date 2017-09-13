@@ -1,0 +1,297 @@
+\documentclass[journal=jpcbfk,manuscript=article]{achemso}
+%\usepackage{geometry}
+% \geometry{a4paper,total={170mm,257mm},left=20mm,top=10mm,}
+\usepackage{graphicx}
+\rmfamily
+\mdseries
+\usepackage{amssymb,amsmath}
+\usepackage{catchfilebetweentags}
+\usepackage[utf8]{inputenc}
+\usepackage[version=3]{mhchem}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\newcommand*\mycommand[1]{\texttt{\emph{#1}}}
+\author{Kaustubh Rane}
+\email{kaustubhrane@iitgn.ac.in}
+\phone{0091 8433596760}
+\affiliation{Chemical Engineering, Indian Institute of Technology, Gandhinagar, Palaj, Gujarat, India - 382355}
+\title{Ch. 4 Multi-phase processes}
+\begin{document}
+
+\maketitle
+
+\section{4.1 Introduction}
+
+The objective of this lecture is to introduce the concepts about phase-equilibria in the context of material balance calculations. Many of these concepts may be covered in detail in the course on thermodynamics. The technical details about different multiphase processes (design of equipments et cetera) will be covered in the specialized courses during later semesters. In this course we will learn these topics with the goal of obtaining the implicit information for our calculations. You will notice that most concepts ultimately help in estimating the fraction of a particular chemical in a particular phase. The main assumptions will be as follows:
+
+\paragraph \noindent 1. The system is at equilibrium conditions.
+
+\paragraph \noindent 2. In many processes like distillation or extraction, the equilibrium conditions (temperature or pressure or composition) may vary within the processing equipment. In such cases, we will be only concerned with the phase equilibria of input and output streams.
+
+\paragraph \noindent 3. Most problems will be concerned with the equilibrium between two phases.
+
+\paragraph \noindent 4. Many technical challenges will be neglected. For example, a complete separation between two phases may not be possible in real-world.
+
+\paragraph \noindent 5. The present lecture only considers non-reactive processes.
+
+The examples of processes are evaporation, distillation, extraction, adsorption et cetera.
+
+\section{4.2 Properties of single phases}
+
+We first explain the determination of certain properties related to the single processes. For example, a particular calculation may require the conversion between volumetric flow rate and mass flow rate. Such conversions may be specially important for the process design. For example, the dimensions of the connecting pipes will depend on the volumetric flow rate. The above relationships may be based on well-tested theories or they may be semi-empirical. Generally, the later is the case in real industrial scenarios. In this lecture we will focus on the estimation of densities for a pure phase. 
+
+\subsection{4.2.1 Densities of liquids and solids}
+
+We first discuss the dependence of density on temperature and pressure. It is generally assumed that "pure" solids and liquids are incompressible and therefore, their densities are almost independent of pressure. The temperature dependence can be determined using following approaches:
+
+\paragraph \noindent 1. If the system is away from the critical or triple points, one may safely assume that the density of liquid or solid is almost independent of temperature. This will usually be the case for solids.
+
+\paragraph \noindent 2.  If the system is near the critical point and is in equilibrium with vapor, one can use the corresponding state theories. These theories have a physical foundation and specify the relationship between the reduced densities of liquids and the reduced temperature, which is same for a broad class of fluids. A reduced density at a particular temperature is the ratio of the density at that temperature to the critical density. Note that the prior knowledge about the critical point is necessary. Interested readers can refer this paper: \url{http://scitation.aip.org/content/aip/journal/jcp/13/7/10.1063/1.1724033}
+
+\paragraph \noindent 3. The relationship between reduced liquid densities and reduced temperatures are also used to estimate liquid densities at temperatures away from the critical point and off-coexistence. Most of these relationships are empirical and involve a parameter that is selected to approximately reproduce the densities of a particular class of liquids. One such equation is by Rackett (\url{http://pubs.acs.org/doi/pdf/10.1021/je60047a012}).
+
+\paragraph \noindent 4. Several other empirical equations have been proposed to estimate the liquid densities from the pressure and temperature. Some of these, like multiparameter equations of state are extensively used due to their inclusion in various software. They are also used to estimate the properties of mixtures. In this course we will not use these equations for the manual calculations (assignments or exams). We will come to them while discussing the software tools for chemical process calculations.
+
+Many applications require the estimation of density of liquid solution, given the densities of individual components and the composition. There are two approaches for doing this:
+
+\paragraph \noindent 1. If the components of a solution are liquids, one may assume the additivity of volumes if the molecular structures of components are similar. Then, the total density is related to the compositions and the 'N' individual densities as shown in equation below
+
+\begin{equation}\label{eqn-dens-add-vol}
+{
+\frac{1}{\rho_{\mathrm{sol}}} = \sum_{\mathrm{i}}^{N} \frac{x_{\mathrm{i}}}{\rho_{\mathrm{i}}} 
+}
+\end{equation}
+
+\paragraph \noindent 2. If some components of the solution are solid at the given conditions or the molecular structures of liquids are very different then the density of solution can be approximated by the weighted sum of the individual densities as shown in equation below
+
+\begin{equation}\label{eqn-dens-weighted}
+{
+\rho_{\mathrm{sol}} = \sum_{\mathrm{i}}^{N} x_{\mathrm{i}} \rho_{\mathrm{i}} 
+}
+\end{equation}
+
+\subsection{4.2.2 Densities of gases}
+
+The equations of state relate the density of a pure gas phase to the temperature and pressure. Here, we will introduce the equations of state that will be used in the present course. The detailed information about their use, their derivation et cetera, may be provided in the thermodynamics course.
+
+\subsubsection{4.2.2.1 Ideal gases}
+
+\paragraph \noindent The simplest equation of state is the ideal gas equation (PV=nRT). It assumes that the molecules of a gas occupy negligible volume and do not interact with each other. It is applicable to gases at low presures and high temperatures. A rule of thumb for using it is as follows (Felder and Rousseau):
+1) For diatomic gases, when $RT/P > 0.005 m^3/mol$ 
+2) For other gases, when $RT/P > 0.02 m^3/mol$
+
+\paragraph \noindent The assumption of ideal gas will be sometimes implied in the problem statement by mentioning the volumetric flowrate in "standard cubic meters per second (or per hour)." It may be abbreviated as SCMS or SCMH. The term standard in the SI system will imply that the flow rate is provided at the temperature of 273K and the pressure of $10^5 Pa$. The ideal gas equation can be then used to calculate the molar flow rate or to calculate the volumetric flowrate at the desired temperature.
+
+\paragraph \noindent When the mixture of gases is assumed to be ideal, one may use the ideal gas equation for individual components. This is done via the concept of partial pressure OR the concept of pure component volume. For example, the problem statement may specify the partial pressure and one needs to estimate the number of moles of the component. Then the ideal gas equation is employed with total volume of the gas. On the other hand, if the problem statement mentions the pure component volume, then one should use the total pressure of the system. Note that the volume fraction of a component is same as molar fraction in an ideal gas mixture.
+
+\subsubsection{4.2.2.2 Real (non-ideal) gases}
+
+Following are some important types of equations of state for non-ideal gases:
+
+\paragraph \noindent 1. Virial equations of state: These equations express the compressibility factor of a gas (PV/nRT) as a polynomial in molar density.
+
+\begin{equation}\label{eqn-virial-ful}
+{\frac{P}{RT} = \rho + \sum_{\mathrm{i=2}}^{\mathrm{n}} B_{\mathrm{i}} \rho^{\mathrm{i}}
+}
+\end{equation}
+
+The form of this expression can be rigorously derived from the statistical mechanics and theoretical approaches are indeed employed to calculate the "virial coefficients" from the molecular-level details. However, the coefficients that are used in most industrial calculations are empirical. The expression is truncated at the second virial coefficient as shown in the equation below. This is then estimated from an empirical function of reduced temperature. The virial coefficient is fitted to a function of reduced temperature (T/Tc) using a parameter called the accentric factor.
+
+\begin{equation}\label{eqn-virial-trunc}
+{
+\frac{P}{RT} = \rho + B_{\mathrm{2}} \rho^{\mathrm{2}}
+} 
+\end{equation}
+
+\paragraph \noindent 2. Cubic equations of state: These are semi-empirical equations that are so called because they can be expressed as a cubic polynomial in volume. The earliest equation in this category was the Van der Waals equation. However, it is no longer used in real-world applications. The modern equations like Peng-Robinson, and Soave-Redlich-Kwong are known to perform much better and are also implemented in the software tools. The parameters of these equations are based on the critical properties of the fluid.
+
+\paragraph \noindent 3. Corresponding state theories and derivatives: As described for liquid densities, they are only suitable for estimating the densities of pure gases that are in equilibrium with liquids. However, there are modifications like the compressibility based equations of state. Here, the empirical data of the compressibility vs reduced pressure (P/Pc) at different reduced temperatures (T/Tc) is used. 
+
+\paragraph \noindent  4. Multiparameter equations of state. They are similar to the ones described for liquid. We will encounter them again while discussing the software tools for chemical process calculations.
+
+For the manual calculations to be performed during this course, we will mainly use the Peng-Robinson (PR) or Soave-Redlich-Kwong (SRK) equations of state.The common equations like PR and SRK are also used for the mixture of non-ideal gases. Since the parameters of these equations are the critical properties of fluids, a relation called the Kay's rule is used to estimate the critical properties of the gaseous mixture from those of the components. Note that this relation is approximate and has little basis in the the physics of phase transitions. For a mixture with 'n' com[ponents, the Kay's rule can be expressed as follows:
+
+\begin{equation}\label{eqn-kay-tc}
+{T_{c} = \sum_{\mathrm{i=1}}^{\mathrm{n}} x_{\mathrm{i}} T_{c\mathrm{i}} 
+}
+\end{equation}
+
+\begin{equation}\label{eqn-kay-pc}
+{P_{c} = \sum_{\mathrm{i=1}}^{\mathrm{n}} x_{\mathrm{i}} P_{c\mathrm{i}} 
+}
+\end{equation}
+
+\section{4.3 Phase equilibria}
+
+In this course, a phase will be defined as the region of material that has uniform physical properties like density or refractive index. The equilibrium between two or more such regions is termed as phase equilibria. Note that we neglect the non-uniformity at the interface between two phases.
+
+\paragraph \noindent Gibbs phase rule: This rule refers to the number of intensive variables (those not influenced by the amount of matter) that can be varied independently for a non-reactive system. The details of this rule may be covered in the course on thermodynamics. Here, we introduce this rule because it helps in identifying the implicit information that is present in a given problem statement. The rule may be expressed as:
+
+F = C - P + 2
+
+F : Number of independently tunable intensive variables
+
+C : Number of chemical components
+
+P : Number of thermodynamic phases in equilibrium
+
+For example, for a liquid-vapor equilibrium of a single component, F =1 (temperature OR pressure)
+
+\subsection{4.3.1 Liquid-vapor phase equilibria}
+
+We briefly came across the liquid-vapor phase equilibria in an earlier lecture in the context of estimating the liquid and vapor densities. Here, we will be mainly concerned with the vapor phase quantities like vapor pressure and the relationship between the compositions in the liquid and vapor phases.
+
+\subsection{4.3.1.1 Single component}
+
+Applying Gibbs phase rule, F = 1. The information about liquid-vapor phase equilibria of single component system will be used in the present course for the following purposes:
+
+\paragraph \noindent 1. To estimate the unknown conditions of the input or output streams in a problem statement. For example, one may need to estimate the temperature of a stream given that the stream contains saturated vapor and/or liquid.
+
+\paragraph \noindent 2. To estimate the properties associated with liquid-vapor phase equilibria containing multiple components (See Raoult's law)
+
+\paragraph \noindent 3. In the energy-balance calculations (Explained later).
+
+The quantity of interest here is the vapor pressure. It is the pressure corresponding to liquid-vapor quilibrium at a given temperature. We will denote it by p* during this course. The subscript willl be used to denote the component. Following are different ways of estimating the vapor pressures:
+
+\paragraph \noindent \textbf{1. From phase diagrams:} Phase diagrams show the relationship between the intensive properties corresponding to the coexistence between 2 or more phases. For a single component fluid, they are 2-D plots of vapor pressure vs temperature or 3-D plots containing density or molar volume in addition to the above two. Detailed phase diagrams are only available for the common fluids. In addition to providing vapor pressures, they also help in predicting the response of the system to a change in temperature or pressure. For example, whether a solid phase is expected on increasing pressure et cetera. Such information is precious when design certain operations. (Give examples!)
+
+Use: In the present course we will use phase diagrams only for the qualitative understanding of the processes. We will not extract data from them.
+
+\paragraph \noindent 2. From thermodynamic relations: Thermodynamic relationships derived from basic laws provide a rigorous relationship between vapor pressure, temperature and energetic quantities. However, in practice, certain assumptions are required before these relationships can be employed. 
+
+Most popular relationship is the \textbf{Clausius-Clapeyron equation} that relates the vapor pressure, temperature and enthalpy of vaporization (see equation \ref{eqn-cla-clap} below). Here, one only needs to know the enthalpy of vaporization that is approximately constant for the given range of temperatures and the vapor pressure at the reference temperature.  
+
+\begin{equation}\label{eqn-cla-clap}
+{ln\left(\frac{p^{*}_{A}}{p^{*}_{\mathrm{ref}}}\right)=-\frac{\Delta H^{v}_{A}}{R}\left(\frac{1}{T}-\frac{1}{T_{\mathrm{ref}}}\right)
+}
+\end{equation}
+
+The main assumptions are:
+
+\paragraph \noindent 1. The gas is ideal
+
+\paragraph \noindent 2. Enthalpy of vaporization is constant with respect to temperature
+
+Use: This will be particularly used for the less common fluids where the vapor pressure is not explicitly known at multiple temperatures. The enthalpies of vaporization are available in all the major databases mentioned earlier.
+
+\textbf{Antoine equation:} This is an empirical equation containing 3 parameters (A,B,C in the shown equation) that relates the vapor pressure and temperature.
+
+\begin{equation}\label{eqn-antoine}
+{log_{10}p^{*} = A - \frac{B}{T+C}
+}
+\end{equation}
+
+Use: Most of the vapor pressure data is fitted to this equation. However, the parameters depend on the range of temperature. Also, the pressure may not be in SI units. Databases like NIST also provide a plot generated using this equation.
+
+\textbf{Cox charts:} Their use stems from the observation that the logarithm of the vapor pressure  of various fluids obey the similar functional form with temperature (See Antoine equation). These charts contain the log(10)P vs T profiles for different fluids.
+
+\subsection{4.3.1.1 Multiple components}
+
+The simplest liquid-vapor system containing the multiple components is the one where only one component can exist in the liquid phase. For example, mixture of water vapor and water insoluble gas in equilibrium with the liquid water. Important terms in such processes are as follows:
+
+\paragraph \noindent 1. Saturated vapor: The gas phase that contains the maximum possible amount of the "condensable" component before condensation happens.
+
+\paragraph \noindent 2. Superheated vapor: The gas phase that contains less than the maximum amount of the condensable component.
+
+\paragraph \noindent 3. Dew point: On cooling the gas, the temperature at which vapor get saturated.
+
+\paragraph \noindent 4. Degrees of superheat: The difference between the given temperature and the dew point.
+
+\paragraph \noindent 5. Relative saturation (relative humidity): Ratio of the partial pressure of the condensable component to iits vapor pressure in percentage.
+
+\paragraph \noindent 6. Molal saturation (molal humidity): Moles of condensable component to the moles of vapor without that component.
+
+\paragraph \noindent 7. Absolute saturation (absolute humidity): Mass of condensable component to the mass of vapor without that component.
+
+\paragraph \noindent 8. Percentage saturation (percentage humidity): Ratio of the molal saturation of the given vapor to that of the saturated vapor in terms of percentage.
+
+Next, we consider systems where more than one component can exist in the liquid and vapor phases. Important terms are as follows:
+
+\paragraph \noindent 1. Bubble-point temperature: When heated at a particular pressure, the temperature at which the first bubble appears in the solution.
+
+\paragraph \noindent 2. Dew-point temperature: When cooled at a particular pressure, the temperature at which the first drop of solution appears.
+
+\paragraph \noindent 3. Bubble-point pressure: When decreasing pressure at constant temperature, the pressure at which first bubble appears.
+
+\paragraph \noindent 4. Dew-point pressure: When increasing pressure at constant temperature, the pressure at which first liquid drop appears.
+
+\paragraph \noindent 5. Ideal solution: One for which Raoult's law or Henry's law are obeyed at all conditions
+
+
+These will be covered in detail during the Thermodynamics course. Both these laws assume the ideal solution (Components are chemically similar resulting in zero enthalpy-change and volume-change associated with mixing).
+
+1. Raoult's law: The partial pressure of a component will be given by equation (1). Valid when the mole fraction of the component is nearly 1. The vapor pressure (p*) will be obtained using the methods discussed earlier.
+
+\begin{equation}\label{eqn-raoults}
+{(1)   p_{A} = x_{A}p^{*}_{A}(T) 
+}
+\end{equation}
+
+2. Henry's law: The partial pressure will be given by equation (2). Valid when mole fraction of the component is close to zero and (for the equation below) the pressure i not too high. The Henry's law constant (H*) wis provided for many fluids in the literature sources mentioned earlier. If not provided, we will use the data compiled on the website (\url{http://www.henrys-law.org/}) by Rolf sander at MPI Mainz.
+
+\begin{equation}\label{eqn-henrys}
+{(1)   p_{A} = x_{A}H^{*}_{A}(T) 
+}
+\end{equation}
+
+
+\section{Student responses}
+
+\subsection {14110151	Navdeep Prakash}
+
+\subsection {15110034	Avinash Joy Bara}
+
+\subsection {15110047	Deepti Gautam}
+
+\subsection {15110133	Suresh Kumar}
+
+\subsection {15110145	Vijendra Maurya}
+
+\subsection {16110001	Abhavya Chandra}
+
+\subsection {16110003	Abhishek Dubey}
+
+\subsection {16110033	Bhumika Sandilya}
+
+\subsection {16110036	Buditi Prudhvi}
+
+\subsection {16110056	Gameti Nirav}
+
+\subsection {16110071	Kamle Mayank Shrikant}
+
+\subsection {16110077	Khili Khamesra}
+
+\subsection {16110086	Lakhan Agrawal}
+
+\subsection {16110088	Manjot Singh}
+
+\subsection {16110109	Patel Milanbhai}
+
+\subsection {16110127	Rahul Shakya}
+
+\subsection {16110131	Raman}
+
+\subsection {16110139	Ritik Jain}
+
+\subsection {16110140	Rohan Gupta}
+
+\subsection {16110153	Shubham Sankhla}
+
+\subsection {16110156	Singh Shivam}
+
+\subsection {16110158	Sourabh Saini}
+
+\subsection {16110159	Spand Bharat Mehta}
+
+\subsection {16110160	Sparsh Jain}
+
+\subsection {16110173	Varsha Singh}
+
+\subsection {16110179	Yash Makwana}
+
+
+%\bibliographystyle{aipauth4-1}
+%\bibliography{ch12references}
+
+
+\end{document} 
